@@ -1,7 +1,7 @@
 ﻿# SIEM Internship Phase 1
 
 ## Lab Architecture
-(Upload your architecture diagram here or describe it)
+![MY SOC diagram](https://github.com/user-attachments/assets/b811d43b-b48e-4dc5-aa98-a4efcaf5b084)
 
 ## Tools Used
 - Kibana
