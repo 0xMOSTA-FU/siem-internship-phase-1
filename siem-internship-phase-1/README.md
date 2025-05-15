@@ -6,11 +6,9 @@
 ## Tools Used
 - Kibana
 - Winlogbeat
-- Sysmon
-- Wireshark
-- Sigma
+- elasicsearch
 - PowerShell
-- curl / netcat / nmap / GoPhish
+- curl / nmap / 
 
 ## Folder Structure
 - /screenshots: images from Kibana, detections
