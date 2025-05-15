@@ -13,5 +13,5 @@
 ## Folder Structure
 - /screenshots: images from Kibana, detections
 - /logs: raw log files used in analysis
-- /writeups: detection rule descriptions, use cases, setup docs
+- /writeups: detection rule descriptions, use cases, setup docs , Full ScreenShots for all proccess
 
