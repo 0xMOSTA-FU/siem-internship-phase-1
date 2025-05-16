@@ -41,3 +41,14 @@ SIEM can catch signs of:
 - /logs: raw log files used in analysis
 - /writeups: detection rule descriptions, use cases, setup docs , Full ScreenShots for all proccess
 
+---
+
+# Tools Download Links
+- Winlogbeat: https://www.elastic.co/beats/winlogbeat
+- ELK Stack: https://www.elastic.co/downloads
+- VMware: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
+- Parrot OS: https://parrotsec.org/
+- Windows 10: https://www.microsoft.com/en-us/software-download/windows10
+
+
+
