@@ -34,16 +34,21 @@ Brute force attacks rely on guessing username-password combinations, either from
 event.code: "4625"
 ```
 
-Suppression Logic:
+## Suppression Logic:
 Group alerts by source.ip over a 5-minute window using alert suppression. This reduces noise and focuses on sustained suspicious activity from the same origin.
 
-Key Fields for Investigation
-Field	Description
-source.ip	IP address attempting the logins
-user.name	Targeted usernames
-host.name	Destination Windows machine
-event.code	Should be 4625 for failed attempts
-winlog.event_data.LogonType	Should be 10 (RDP - RemoteInteractive)
+---
+## Key Fields for Investigation
+
+
+| Field                        | Description                            |
+| ---------------------------- | -------------------------------------- |
+| source.ip                    | IP address attempting the logins       |
+| user.name                    | Targeted usernames                     |
+| host.name                    | Destination Windows machine            |
+| event.code                   | Should be 4625 for failed attempts     |
+| winlog.event\_data.LogonType | Should be 10 (RDP - RemoteInteractive) |
+
 
 Make sure to filter for Logon Type 10, which specifically indicates RDP logon attempts.
 
