@@ -78,9 +78,13 @@ Consider deploying MFA (Multi-Factor Authentication).
 Monitor for follow-up actions such as successful logons (4624), privilege escalation, or suspicious process execution.
 
 False Positives to Watch
-Scenario	Notes
-User mistyped password multiple times	Especially with long or complex passwords
-IT admin performing RDP logins across systems	May show similar failed attempts during routine maintenance
+
+
+| Scenario                                      | Notes                                                       |
+| --------------------------------------------- | ----------------------------------------------------------- |
+| User mistyped password multiple times         | Especially with long or complex passwords                   |
+| IT admin performing RDP logins across systems | May show similar failed attempts during routine maintenance |
+
 
 False positives can often be ruled out by correlating user behavior, business hours, and asset roles.
 
