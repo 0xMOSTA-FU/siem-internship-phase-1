@@ -65,10 +65,12 @@ Review targeted usernames – repeated attempts to access Administrator, admin, 
 Evaluate timing and frequency – login attempts outside business hours or from external IPs should be considered suspicious.
 
 Validate with the user or system owner whether the access was expected.
+
+
 ---
 
 
-Response Recommendations
+## Response Recommendations
 Block or isolate the attacking IP at the firewall or endpoint level.
 
 Force password reset on targeted user accounts.
@@ -78,6 +80,8 @@ Enable account lockout policy to limit brute force attempts.
 Consider deploying MFA (Multi-Factor Authentication).
 
 Monitor for follow-up actions such as successful logons (4624), privilege escalation, or suspicious process execution.
+
+
 ---
 
 False Positives to Watch
