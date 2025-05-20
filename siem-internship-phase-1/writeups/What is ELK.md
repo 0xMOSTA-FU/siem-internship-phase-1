@@ -10,7 +10,7 @@ Let me tell you a **real-world story** one that takes place behind the scenes in
 Our story starts at the endpoint , the humble Windows machine.
 
 * **Winlogbeat** is like a silent soldier deployed on every Windows system.
-* Its job? To **collect Windows Event Logs** — login attempts, process creation, service changes, system errors — *everything*.
+* Its job? To **collect Windows Event Logs** —> login attempts, process creation, service changes, system errors — *everything*.
 * It's lightweight, always watching.
 * Once it detects an event, it sends that log straight to the central system (either directly to **Elasticsearch**, or through **Logstash** for preprocessing).
 
