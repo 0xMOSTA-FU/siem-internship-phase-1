@@ -1,4 +1,4 @@
-Let me tell you a **real-world story** one that takes place behind the scenes in almost every modern enterprise. It’s the story of how machines talk, how logs whisper secrets, and how security teams stay ahead of threats. Buckle up — you're about to dive into the full **SIEM workflow** using **Winlogbeat**, **Elasticsearch**, and **Kibana**.
+Let me tell you a **real-world story** one that takes place behind the scenes in almost every modern enterprise. It’s the story of how machines talk, how logs whisper secrets, and how security teams stay ahead of threats. Buckle up  you're about to dive into the full **SIEM workflow** using **Winlogbeat**, **Elasticsearch**, and **Kibana**.
 
 ---
 
@@ -7,7 +7,7 @@ Let me tell you a **real-world story** one that takes place behind the scenes in
 
 ##  The Beginning: Winlogbeat – The Silent Agent
 
-Our story starts at the endpoint — the humble Windows machine.
+Our story starts at the endpoint , the humble Windows machine.
 
 * **Winlogbeat** is like a silent soldier deployed on every Windows system.
 * Its job? To **collect Windows Event Logs** — login attempts, process creation, service changes, system errors — *everything*.
@@ -39,7 +39,7 @@ But often, Winlogbeat sends logs **directly to Elasticsearch**.
 Once the logs arrive, **Elasticsearch** takes over.
 
 * It stores every log entry as a **document** in a searchable **index**.
-* It’s not just storage — it’s an intelligent search engine.
+* It’s not just storage , it’s an intelligent search engine.
 * Supports full-text search, filtering, aggregations, and real-time querying.
 
 For example, it stores logs like this:
@@ -81,7 +81,7 @@ You can build dashboards like:
 
 ##  The Shield: SIEM – The Security Brain in Kibana
 
-Inside Kibana, there’s a **dedicated SIEM module** — where logs are turned into **actionable intelligence**.
+Inside Kibana, there’s a **dedicated SIEM module** , where logs are turned into **actionable intelligence**.
 
 * You define **detection rules**:
 
