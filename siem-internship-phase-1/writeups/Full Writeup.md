@@ -7,3 +7,7 @@ Let’s get started.
 > I did **not** use a static IP address in my lab setup.  
 > As a result, the IP address **changed every time** I shut down and restarted the system.  
 > The only thing I updated was the IP **inside Winlogbeat** to match the new one each time.
+> like that :
+> 
+![Screenshot 2025-05-13 003558](https://github.com/user-attachments/assets/34e1030d-80fd-4573-99ce-b8d9f361dcde)
+![Screenshot 2025-05-14 162428](https://github.com/user-attachments/assets/e55b6fcb-18e7-4fee-9190-f6061c75a877)
