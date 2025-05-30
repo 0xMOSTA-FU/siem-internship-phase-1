@@ -1,0 +1,39 @@
+Detection Logic: Brute Force Attack (Event ID 4625)
+
+This detection logic is designed to identify potential brute-force login attempts on Windows systems, primarily through RDP (Remote Desktop Protocol), using failed login events (Event ID 4625).
+
+Detection Criteria:
+- Event ID: 4625 (Failed Logon)
+- Log source: winlogbeat-* index
+- Repeated failed login attempts from the same source IP address
+- Alert suppression is applied for source.ip to avoid alert flooding
+
+Additional Filters:
+- Alerts are grouped and suppressed for 5 minutes to reduce noise
+- Only alerts from relevant log indices are considered:
+  apm-*-transaction*, auditbeat-*, endgame-*, filebeat-*, logs-*, packetbeat-*, traces-apm*, winlogbeat-* (excluding *-elastic-cloud-logs-*)
+
+Assumptions:
+- A brute-force attack is assumed if multiple 4625 events are observed from the same source IP over a short period
+- The system distinguishes between actual brute-force attempts and false positives (e.g., mistyped passwords or off-hours legitimate admin access)
+
+Suppression Logic:
+- Alerts are suppressed by `source.ip` for 5 minutes
+- Alerts missing this field will still be grouped using available fields
+
+Risk Level:
+- Severity: High
+- Risk Score: 73
+
+MITRE ATT&CK Mapping:
+- Tactic: Credential Access (TA0006)
+- Technique: Brute Force (T1110)
+
+Validation:
+- Logs were generated using a PowerShell script simulating multiple failed login attempts
+- Manual rule execution was performed to verify alert generation
+
+Future Work:
+- Additional rules will be added.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
