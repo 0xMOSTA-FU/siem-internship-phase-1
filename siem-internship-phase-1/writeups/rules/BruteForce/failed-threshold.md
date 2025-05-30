@@ -1,7 +1,7 @@
 # Brute Force Detection Rule (Threshold-Based)
 
 ##  Rule Name:
-**BruteForce-FailedLogin-Threshold**
+**BruteForce**
 
 ##  Objective:
 Detect potential brute-force attacks by identifying multiple failed login attempts (Event ID 4625) from the same source IP within a short time frame.
