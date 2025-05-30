@@ -115,6 +115,7 @@ The authentication information fields provide detailed information about this sp
 }
 ```
 ![Screenshot 2025-05-31 141044](https://github.com/user-attachments/assets/73b915e4-19db-4007-a685-0534c78f5ac0)
+![image](https://github.com/user-attachments/assets/cc8e624a-7dae-4860-b973-c798bf5c39a4)
 
 ![image](https://github.com/user-attachments/assets/72a32bfd-ee14-48af-90d3-7150e9910ee7)
 
