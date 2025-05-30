@@ -1,4 +1,7 @@
 from Management -> Dev Tools :
+
+## Brute Force
+--------
 Shell:
 ```shell
 GET winlogbeat-*/_search
@@ -115,4 +118,4 @@ The authentication information fields provide detailed information about this sp
 
 ![image](https://github.com/user-attachments/assets/72a32bfd-ee14-48af-90d3-7150e9910ee7)
 
-
+------------------
