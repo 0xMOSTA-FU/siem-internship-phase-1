@@ -1,6 +1,6 @@
 from Management -> Dev Tools :
 Shell:
-
+```shell
 GET winlogbeat-*/_search
 {
   "size": 100,
@@ -17,10 +17,10 @@ GET winlogbeat-*/_search
   }
 }
 
-
+```
 
 Result:
-
+```json
 {
   "took": 52,
   "timed_out": false,
@@ -110,3 +110,4 @@ The authentication information fields provide detailed information about this sp
     ]
   }
 }
+```
