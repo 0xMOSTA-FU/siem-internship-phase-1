@@ -793,4 +793,6 @@ In summary, a well-structured SIEM architecture is integral to an organization's
 
 ---
 
+## ELK STACK IN Details (From Byte To SOC)
+
 
