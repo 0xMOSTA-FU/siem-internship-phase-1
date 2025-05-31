@@ -665,3 +665,86 @@ By regularly reviewing and analyzing the logs within Event Viewer, users can mai
 [1]: [https://www.lenovo.com/us/en/glossary/windows-event-viewer/?srsltid=AfmBOornhCQ-Fnxr8q41ZKmllxqBBGnQd61KgxXKS5kMf4vsNKjGd9FW&utm_source=chatgpt.com "What You Need to Know About Event Viewer in Windows 10 - Lenovo"]
 [2]: [https://www.windowscentral.com/how-use-event-viewer-windows-10?utm_source=chatgpt.com "How to use Event Viewer on Windows 10"]
 
+----
+
+---
+
+### What is Sysmon?
+
+**Sysmon** is a Windows system service and device driver that logs system activity to the Windows event log. It provides detailed information about process creations, network connections, and changes to file creation time, among other activities. By collecting this data, Sysmon helps in detecting malicious activity and understanding system behavior. ([Tier Zero Security][1], [System Weakness][2], [blumira.com][3])
+
+![image](https://github.com/user-attachments/assets/b90f9bba-ac78-43c4-9bb0-39f8299e805f)
+
+
+---
+
+###  Key Features of Sysmon
+
+Sysmon captures a variety of system events, including:
+
+* **Process Creation (Event ID 1)**: Logs details of newly created processes, including the process GUID, command line, and hashes of the executable.([System Weakness][2])
+
+* **File Creation Time Changes (Event ID 2)**: Detects when a process changes the creation time of a file, which can be indicative of timestomping techniques used by malware.([defensiveorigins.com][4])
+
+* **Network Connections (Event ID 3)**: Records TCP/UDP connections, providing information about source and destination IP addresses and ports.
+
+* **Driver Loading (Event ID 6)**: Monitors when drivers are loaded into the system, which can help detect unauthorized or malicious drivers.([System Weakness][2])
+
+* **Image Loading (Event ID 7)**: Tracks DLLs and other modules loaded into processes, useful for identifying code injection or DLL hijacking.([blumira.com][3])
+
+* **Create Remote Thread (Event ID 8)**: Logs when a process creates a thread in another process, a technique often used in code injection.
+
+* **Raw Disk Access (Event ID 9)**: Detects when a process reads data directly from a disk, bypassing the file system, which can be a sign of malicious activity.
+
+* **Process Access (Event ID 10)**: Monitors when a process opens another process for access, which can indicate attempts to manipulate or inspect other processes.
+
+* **File Creation (Event ID 11)**: Logs when a file is created, providing details about the process that created the file and the file's attributes.
+
+These events provide granular visibility into system activities, aiding in threat detection and forensic investigations.&#x20;
+
+---
+
+###  Configuring Sysmon
+
+Sysmon's behavior is governed by an XML configuration file, which specifies which events to log and under what conditions. Crafting an effective configuration is crucial to balance between comprehensive monitoring and manageable data volume.([cdn2.qualys.com][5])
+
+Several community-driven configuration templates are available to help users get started:
+
+* **SwiftOnSecurity's Sysmon Config**: A well-documented configuration file that provides high-quality event tracing and serves as a solid starting point for most environments. ([GitHub][6])
+
+* **Olaf Hartong's Sysmon Modular**: Offers a modular approach to Sysmon configuration, allowing users to enable or disable specific monitoring features based on their needs.([GitHub][6])
+
+These configurations can be customized to include or exclude specific processes, directories, or event types, tailoring Sysmon's monitoring to the organization's requirements.([learn.microsoft.com][7])
+
+---
+
+###  Getting Started with Sysmon
+
+To install Sysmon, download it from the [Microsoft Sysinternals website](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) and run the following command in an elevated Command Prompt:([learn.microsoft.com][8])
+
+```
+
+Sysmon.exe -accepteula -i sysmonconfig.xml
+```
+
+
+
+This command accepts the license agreement and installs Sysmon with the specified configuration file.([Medium][9])
+
+Once installed, Sysmon logs can be viewed in the Windows Event Viewer under:([manageengine.com][10])
+
+```
+
+Applications and Services Logs > Microsoft > Windows > Sysmon > Operational
+```
+
+
+
+Regularly reviewing these logs can help in identifying unusual or malicious activities on the system.
+
+---
+
+By integrating Sysmon into your system monitoring strategy, you gain detailed insights into system activities, enhancing your ability to detect and respond to security threats effectively.
+
+---
+
