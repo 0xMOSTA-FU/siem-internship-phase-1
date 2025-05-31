@@ -140,3 +140,63 @@ In simple terms:
 
 After talking about the tools we need to download and discussing the concept of **virtualization**, let’s move on to the next step, which is **setting up our lab from scratch**.
 
+Alright, first we need to set up the machines. I chose **Parrot OS**, which is a Linux-based machine, to host our **SIEM** system.
+I also created another machine running **Windows 10**, which I’ll connect to the SIEM to send logs from and use to test the rules.
+
+So, in this case, our **log source** is **Windows 10**.
+
+I’ll show you some images shortly to demonstrate how to create these machines step by step—stay tuned.
+For this task, I’m using **VMware**, but you’re free to use any other tool you prefer—no problem at all.
+To begin, after opening **VMware**, we need to create a new virtual machine for **Linux**.
+
+First, go to the top menu, click on **File**, then select **New Virtual Machine Wizard**, or simply press **Ctrl + N**.
+![image](https://github.com/user-attachments/assets/93652caa-9466-4074-bea5-fe20a6f0a094)
+
+the screen from the "New Virtual Machine Wizard" in VMware Workstation Pro 17:
+
+This is the initial welcome screen for creating a new virtual machine (VM). It asks you what type of configuration you want for the VM.
+
+Here are the options:
+
+1.  **Typical (recommended)**
+    * **Description:** This is the default and recommended option for most users. It simplifies the VM creation process by automatically setting common and efficient configurations. VMware Workstation handles details like virtual disk type, network settings, and default memory size, based on the OS you intend to install.
+    * **Use case:** Ideal if you want to quickly create a VM with minimal fuss for general purposes like testing new OS, running specific applications, or simple lab setups.
+
+2.  **Custom (advanced)**
+    * **Description:** This option gives you full, granular control over every aspect of the VM's configuration. You'll go through additional screens to specify details like:
+        * **Virtual machine compatibility:** For transferring VMs to older VMware products (Workstation or ESXi).
+        * **SCSI controller type:** Affects performance and compatibility with the guest OS.
+        * **Virtual disk type:** (e.g., IDE, SCSI, SATA).
+        * Advanced network options, CPU cores, etc.
+    * **Use case:** For advanced users with specific requirements, compatibility needs (e.g., for older OS or specific software), or when optimizing performance.
+
+**Summary/Recommendation:**
+
+* For most users and everyday tasks, choose **"Typical (recommended)"** for a quick and easy setup with good default settings.
+* If you are an experienced user or have very specific technical requirements, choose **"Custom (advanced)"** for complete control over the VM's configuration.
+
+![image](https://github.com/user-attachments/assets/74adda5e-f365-4ebd-b26a-d20e51aa9a94)
+
+This screen guides you on how to install the operating system (OS) onto your new virtual machine (VM). A VM functions like a real computer and requires an OS to operate.
+
+Here are the options:
+
+1.  **Install from:**
+    * **Installer disc:**
+        * Used if you want to install the OS from a physical disc (CD/DVD) in your host computer's drive.
+        * "No drives available" means no physical drive is detected or recognized.
+        * **Use case:** When you have a physical installation disc for an OS.
+    * **Installer disc image file (iso):**
+        * **Most common and recommended option.** This allows you to select an ISO file, which is a complete digital copy of an installation disc.
+        * For Example: The path shown (`D:\...\ويندوزh2_release_`) indicates an ISO file for Windows.
+        * "Browse..." allows you to locate the ISO file on your computer.
+        * **Use case:** When you have downloaded an OS as an ISO file (e.g., Windows, Linux distributions).
+    * **I will install the operating system later.**
+        * This option creates the VM with a blank hard disk, without installing the OS immediately.
+        * You'll configure the VM's hardware (RAM, CPU, disk size) first, and then install the OS manually when you power on the VM for the first time.
+        * **Use case:** If you want to set up the VM's configuration first, or plan to use advanced/network-based installation methods, or don't have the OS media ready yet.
+
+**Summary/Recommendation:**
+
+For most users, **"Installer disc image file (iso)" is the best and most convenient choice.** Download the OS as an ISO file and select it. "I will install the operating system later" is useful if you want to set up the VM's hardware first or use custom installation methods.
+
