@@ -384,3 +384,19 @@ Purpose: To choose between upgrading an existing Windows installation or perform
 ![image](https://github.com/user-attachments/assets/dab45e57-e32f-4bda-b2a3-ac19887ad4c5)
 
 ![image](https://github.com/user-attachments/assets/078a1e10-bea8-48db-be51-894050b72dc9)
+
+![image](https://github.com/user-attachments/assets/6c988cfe-71b6-479e-bd1f-e51e58d16b12)
+
+![image](https://github.com/user-attachments/assets/029e94c5-a6b8-489b-9ab7-27e3481a9518)
+
+![image](https://github.com/user-attachments/assets/1cd313da-8fac-4eb5-a699-cb4cd32e3a1d)
+
+![image](https://github.com/user-attachments/assets/c5ecb574-beb9-4c0f-9779-de01b0c72309)
+
+![image](https://github.com/user-attachments/assets/9af57ae0-27ad-4b75-9365-0e65409a15ac)
+
+
+confirm password and complete next steps.
+
+![image](https://github.com/user-attachments/assets/d6775131-7cc4-41ed-9691-e89a8ee63456)
+
