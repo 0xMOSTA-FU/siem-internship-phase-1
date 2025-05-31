@@ -138,3 +138,5 @@ In simple terms:
 
 ---
 
+After talking about the tools we need to download and discussing the concept of **virtualization**, let’s move on to the next step, which is **setting up our lab from scratch**.
+
