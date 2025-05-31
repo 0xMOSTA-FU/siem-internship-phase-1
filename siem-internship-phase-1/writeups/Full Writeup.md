@@ -585,4 +585,83 @@ Together, they form a comprehensive approach to system observability, enabling p
 
 ---
 
+###  What is Event Viewer?
+
+**Event Viewer** is a built-in Windows utility that records detailed logs of significant events on your system. These events encompass system errors, application crashes, security incidents, and more. By accessing these logs, users can diagnose issues, monitor system health, and ensure security compliance. ([lenovo.com][1])
+
+![Screenshot 2025-05-22 082305](https://github.com/user-attachments/assets/404a6773-2266-4e81-84d7-c99084da420b)
+
+---
+
+###  Types of Event Logs
+
+Event Viewer categorizes logs into several sections:
+
+* **Application Logs**: Events logged by applications or programs. For instance, a database application might log a file error.
+
+* **System Logs**: Events logged by Windows system components, such as driver failures or system errors.
+
+* **Security Logs**: Records of login attempts and resource access, crucial for auditing and identifying unauthorized access attempts.
+
+* **Setup Logs**: Events related to application setups, including installations and updates.
+
+* **Forwarded Events**: Logs collected from remote computers, useful in centralized monitoring scenarios.&#x20;
+
+---
+
+###  Event Levels Explained
+
+Each event in the logs is assigned a level indicating its severity:([Windows Central][2])
+
+* **Information**: General information about system operations.([lenovo.com][1])
+
+* **Warning**: Indications of potential issues that aren't immediately critical.
+
+* **Error**: Significant problems, such as loss of data or functionality.
+
+* **Critical**: Severe issues causing complete failure of a component or system.
+
+* **Audit Success/Failure**: Results of security access attempts, indicating whether they were successful or not.&#x20;
+
+---
+
+###  Accessing and Utilizing Event Viewer
+
+To open Event Viewer:
+
+1. Press `Windows + R`, type `eventvwr.msc`, and press Enter.
+
+2. Navigate through the console tree to explore different logs.
+
+Within Event Viewer, you can:
+
+* **Filter Logs**: Narrow down events based on criteria like date, event level, or source.
+
+* **Search Logs**: Find specific events using keywords or event IDs.
+
+* **Create Custom Views**: Save specific filters for repeated use, streamlining the monitoring process.&#x20;
+
+---
+
+###  Practical Applications
+
+Event Viewer serves multiple purposes:
+
+* **Troubleshooting**: Identify the root causes of system crashes, application failures, or hardware issues.
+
+* **Security Monitoring**: Detect unauthorized access attempts or changes to system settings.
+
+* **Performance Analysis**: Monitor system performance and identify bottlenecks or recurring issues.
+
+For instance, if your system experiences unexpected shutdowns, reviewing the System Logs can reveal if a specific driver or application is the culprit.([Windows Central][2])
+
+---
+
+By regularly reviewing and analyzing the logs within Event Viewer, users can maintain system integrity, preempt potential issues, and ensure a secure computing environment.
+
+---
+## Refrences and for more details Visit Links Below:
+
+[1]: https://www.lenovo.com/us/en/glossary/windows-event-viewer/?srsltid=AfmBOornhCQ-Fnxr8q41ZKmllxqBBGnQd61KgxXKS5kMf4vsNKjGd9FW&utm_source=chatgpt.com "What You Need to Know About Event Viewer in Windows 10 - Lenovo"
+[2]: https://www.windowscentral.com/how-use-event-viewer-windows-10?utm_source=chatgpt.com "How to use Event Viewer on Windows 10"
 
