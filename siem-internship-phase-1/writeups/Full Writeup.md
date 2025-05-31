@@ -662,6 +662,6 @@ By regularly reviewing and analyzing the logs within Event Viewer, users can mai
 ---
 ## Refrences and for more details Visit Links Below:
 
-[1]: https://www.lenovo.com/us/en/glossary/windows-event-viewer/?srsltid=AfmBOornhCQ-Fnxr8q41ZKmllxqBBGnQd61KgxXKS5kMf4vsNKjGd9FW&utm_source=chatgpt.com "What You Need to Know About Event Viewer in Windows 10 - Lenovo"
-[2]: https://www.windowscentral.com/how-use-event-viewer-windows-10?utm_source=chatgpt.com "How to use Event Viewer on Windows 10"
+[1]: [https://www.lenovo.com/us/en/glossary/windows-event-viewer/?srsltid=AfmBOornhCQ-Fnxr8q41ZKmllxqBBGnQd61KgxXKS5kMf4vsNKjGd9FW&utm_source=chatgpt.com "What You Need to Know About Event Viewer in Windows 10 - Lenovo"]
+[2]: [https://www.windowscentral.com/how-use-event-viewer-windows-10?utm_source=chatgpt.com "How to use Event Viewer on Windows 10"]
 
