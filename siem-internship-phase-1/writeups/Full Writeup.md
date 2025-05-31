@@ -335,5 +335,19 @@ Setup Windows10 Machine :
 ![image](https://github.com/user-attachments/assets/824c4f64-6f14-4d2f-8efe-6a7a3fc36ee6)
 ![image](https://github.com/user-attachments/assets/098fe060-2658-44eb-861d-42abee5fd034)
 
+![image](https://github.com/user-attachments/assets/da7b3ddc-25b7-476a-9519-066294409cb6)
+![image](https://github.com/user-attachments/assets/1292e2ab-084a-44f7-8674-c2015ddde5df)
 
+press any key 
+
+![image](https://github.com/user-attachments/assets/5907e34a-72e2-4dcb-a514-a80300d758a7)
+
+![image](https://github.com/user-attachments/assets/cd6e94c3-f5db-41b7-b1e7-53b1e78d4dcb)
+
+![image](https://github.com/user-attachments/assets/54fc3bb4-61a9-4016-bd85-8713866f3a26)
+
+Alright, we’ve encountered a problem here. Fortunately, the solution is simple.
+
+While creating the virtual machine, we’ll make one small change:
+Instead of attaching the **ISO file** during the machine setup process, we’ll **add the ISO after the machine has been created**.
 
