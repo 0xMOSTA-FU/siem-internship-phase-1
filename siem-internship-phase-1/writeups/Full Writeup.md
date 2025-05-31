@@ -264,3 +264,9 @@ And why choose Debian? For a few reasons:
 
 **In short: Whenever you have the option to choose the base distribution, pick that. For Parrot OS, its base distribution is Debian.**
 
+![image](https://github.com/user-attachments/assets/9a7a65ff-57b0-4f15-8a73-8dd3cbb24a89)
+
+ (Name the Virtual Machine):
+
+Explanation: This step allows you to name your virtual machine and choose its storage location on your host computer.
+Purpose: Assigns a name and specifies the storage path for the VM files.
