@@ -152,6 +152,48 @@ To begin, after opening **VMware**, we need to create a new virtual machine for 
 First, go to the top menu, click on **File**, then select **New Virtual Machine Wizard**, or simply press **Ctrl + N**.
 ![image](https://github.com/user-attachments/assets/93652caa-9466-4074-bea5-fe20a6f0a094)
 
+This image displays the "File" menu within the VMware Workstation interface. This menu is the starting point for many fundamental operations related to virtual machine management. The red arrow highlights the most relevant option for creating a new virtual machine.
+
+Here's a breakdown of the options:
+
+1.  **New Virtual Machine... (Ctrl+N)**
+    * **Explanation:** This is the primary option to create a completely new virtual machine from scratch. Clicking it (or using `Ctrl+N`) launches the "New Virtual Machine Wizard," which guides you through configuring the VM's resources and installing an operating system.
+    * **Use case:** To build any new VM for testing, isolated environments, or server setup.
+
+2.  **New Window**
+    * **Explanation:** Opens another VMware Workstation window, useful for managing multiple VMs or projects simultaneously.
+    * **Use case:** For better organization when working with many VMs.
+
+3.  **Open... (Ctrl+O)**
+    * **Explanation:** Allows you to load an existing virtual machine by selecting its configuration file (typically a `.vmx` file).
+    * **Use case:** To start using a VM that was previously created or copied.
+
+4.  **Scan for Virtual Machines...**
+    * **Explanation:** Scans specified drives for VM files that might exist but aren't yet listed in your VMware Workstation library.
+    * **Use case:** To add manually moved or external VMs to your recognized list.
+
+5.  **Configure Auto Start VMs**
+    * **Explanation:** Lets you define which VMs should automatically power on when the host computer starts (or when the VMware Workstation service begins).
+    * **Use case:** For VMs that need to be continuously running, like virtual servers or always-on test environments.
+
+6.  **Close Tab (Ctrl+W)**
+    * **Explanation:** Closes the currently active tab in the VMware Workstation interface. If a VM is running, it will prompt you to power it off or suspend it first.
+    * **Use case:** To close a VM's view without exiting the application.
+
+7.  **Connect to Server... (Ctrl+L)**
+    * **Explanation:** Allows you to connect to a VMware vCenter Server or ESXi Host to manage VMs hosted on those enterprise-level servers.
+    * **Use case:** For administrators managing larger vSphere/ESXi environments.
+
+8.  **Export to OVF...**
+    * **Explanation:** Exports a VM or group of VMs into the OVF (Open Virtualization Format) or OVA format. This is an open standard for VM portability between different virtualization products.
+    * **Use case:** For sharing VMs, migrating them to different virtualization platforms, or creating standardized backups.
+
+9.  **Exit**
+    * **Explanation:** Closes the entire VMware Workstation application. It will prompt you to save changes or shut down running VMs.
+    * **Use case:** To completely close the application when you're done.
+
+![image](https://github.com/user-attachments/assets/74adda5e-f365-4ebd-b26a-d20e51aa9a94)
+
 the screen from the "New Virtual Machine Wizard" in VMware Workstation Pro 17:
 
 This is the initial welcome screen for creating a new virtual machine (VM). It asks you what type of configuration you want for the VM.
@@ -175,7 +217,7 @@ Here are the options:
 * For most users and everyday tasks, choose **"Typical (recommended)"** for a quick and easy setup with good default settings.
 * If you are an experienced user or have very specific technical requirements, choose **"Custom (advanced)"** for complete control over the VM's configuration.
 
-![image](https://github.com/user-attachments/assets/74adda5e-f365-4ebd-b26a-d20e51aa9a94)
+![image](https://github.com/user-attachments/assets/79620c2b-5a1f-4350-af05-ab9c1eecd917)
 
 This screen guides you on how to install the operating system (OS) onto your new virtual machine (VM). A VM functions like a real computer and requires an OS to operate.
 
