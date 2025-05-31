@@ -296,5 +296,8 @@ Purpose: Assigns a name and specifies the storage path for the VM files.
 * **Customize Hardware...:** This button allows you to go back and modify any hardware settings (like RAM, processor, hard disk, network) before finalizing.
 * **Finish:** Clicking this button tells VMware to proceed with creating the virtual machine with the summarized settings, making it ready for you to power on and install the operating system.
 * **Purpose:** To review and confirm the final configuration settings of the virtual machine before its creation, offering a last chance for modifications.
+
+  
 ![image](https://github.com/user-attachments/assets/5d483cb9-1e88-493e-b4e3-b75a57a211ae)
+
 Power on This Machine.
