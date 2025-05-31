@@ -400,3 +400,8 @@ confirm password and complete next steps.
 
 ![image](https://github.com/user-attachments/assets/d6775131-7cc4-41ed-9691-e89a8ee63456)
 
+
+Alright, we’ve finished setting up the machines we’ll be working on.
+
+The next phase will be to **explain the technologies and tools** we’ll be using, along with the components we’ll be working with-in more detail.
+
