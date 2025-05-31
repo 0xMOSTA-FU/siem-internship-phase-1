@@ -327,6 +327,8 @@ Power on This Machine.
 
 ![image](https://github.com/user-attachments/assets/654f460b-8688-4621-b9c8-a7ee4014594c)
 
+Setup Windows10 Machine : 
+![image](https://github.com/user-attachments/assets/73f24640-a0ea-4502-810e-2be1f42a128b)
 
 
 
