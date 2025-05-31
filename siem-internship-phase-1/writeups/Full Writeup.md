@@ -250,4 +250,17 @@ For most users, **"Installer disc image file (iso)" is the best and most conveni
 
 ![image](https://github.com/user-attachments/assets/faa60f7f-4408-42ac-91ac-d5979f85b032)
 
+![image](https://github.com/user-attachments/assets/3de6be36-765f-4f0a-a040-fe41aa29bc6c)
+
+when you're going to select the version for Parrot OS in VMware, what exactly do you choose? Linux 6.x or Debian?
+
+The short and helpful answer for you is: **You should choose `Debian`**.
+
+And why choose Debian? For a few reasons:
+
+1.  **Parrot OS is fundamentally based on Debian:** Look, boss, even though Parrot OS has its own tools and specific additions, its core foundation is Debian. It's like a cousin to Debian. When you choose "Debian" in VMware, the program understands that you're installing a Debian-based system and it sets up the configurations that work best for it.
+2.  **VMware communicates using fundamental names:** The options that appear in VMware are usually for the well-known, foundational distribution names. When you pick "Debian," it signals to VMware to adjust things like the default virtual display adapter, network card, and other settings to work perfectly with systems from the Debian family.
+3.  **Linux 6.x is a kernel version, not a distribution:** "Linux 6.x" refers specifically to the "Kernel" version (the core of Linux) that the system uses, not the name of the distribution itself. So, while Parrot OS does use a 6.x kernel (or even newer, as we discussed), choosing "Linux 6.x" as the *distribution* option in VMware might not be precise enough and might not allow VMware to set the best possible configurations compared to explicitly selecting "Debian."
+
+**In short: Whenever you have the option to choose the base distribution, pick that. For Parrot OS, its base distribution is Debian.**
 
