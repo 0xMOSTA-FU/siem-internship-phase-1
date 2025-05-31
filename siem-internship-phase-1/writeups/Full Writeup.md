@@ -241,4 +241,13 @@ Here are the options:
 **Summary/Recommendation:**
 
 For most users, **"Installer disc image file (iso)" is the best and most convenient choice.** Download the OS as an ISO file and select it. "I will install the operating system later" is useful if you want to set up the VM's hardware first or use custom installation methods.
+![image](https://github.com/user-attachments/assets/c9072ff2-e4c0-4093-9978-4e46e0a43ab6)
+ information about Parrot OS:
+* **Based on Debian Testing:** Parrot OS continues to be based on Debian's "testing" branch (currently codenamed "Trixie"). This provides a balance of up-to-date packages and reasonable stability.
+* **Rolling Release Model:** Parrot OS follows a rolling release development model. This means continuous updates for packages, applications, and the Linux kernel, eliminating the need for full re-installations with major releases and ensuring users always have the latest tools and security patches.
+* **Linux Kernel Version:** While previous versions used Linux Kernel 6.1, Parrot OS, due to its rolling release nature, now utilizes newer kernel versions (e.g., Parrot 6.3 uses Linux kernel 6.11.5 or later). The kernel is regularly updated.
+* **Debian 13 Codename:** "Trixie" remains the development codename for Debian 13. As of March 2025, the "Trixie" branch has entered its "freeze" phase, moving towards its stable release later in 2025.
+
+![image](https://github.com/user-attachments/assets/faa60f7f-4408-42ac-91ac-d5979f85b032)
+
 
