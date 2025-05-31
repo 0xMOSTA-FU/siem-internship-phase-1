@@ -301,3 +301,32 @@ Purpose: Assigns a name and specifies the storage path for the VM files.
 ![image](https://github.com/user-attachments/assets/5d483cb9-1e88-493e-b4e3-b75a57a211ae)
 
 Power on This Machine.
+
+![image](https://github.com/user-attachments/assets/5276f3c1-f953-4092-9f3a-d5ca95906c90)
+
+![image](https://github.com/user-attachments/assets/0d790b06-33a4-49f8-833c-415ad75e82da)
+
+![image](https://github.com/user-attachments/assets/27fa62d9-5ac6-4056-af3d-da98b85d8854)
+
+
+![image](https://github.com/user-attachments/assets/b8c8e615-7617-4d35-bdcd-fcec40a1ec46)
+
+![image](https://github.com/user-attachments/assets/0ab3be79-468a-4373-bb92-17af7ea67b11)
+
+![image](https://github.com/user-attachments/assets/d5074c42-de13-477e-b868-b5218e190078)
+
+![image](https://github.com/user-attachments/assets/41b26cd6-c048-4c43-9182-6495dc58a195)
+
+![image](https://github.com/user-attachments/assets/3813b397-e9f6-46ec-bae5-3d3e9d334daa)
+
+![image](https://github.com/user-attachments/assets/61306558-7251-454f-aad1-cbd489654292)
+
+![image](https://github.com/user-attachments/assets/a46f551d-4da2-46df-9900-37e19f5479ce)
+
+![image](https://github.com/user-attachments/assets/05ad7f99-ab0c-466b-a0bc-b2ff0d87adec)
+
+![image](https://github.com/user-attachments/assets/654f460b-8688-4621-b9c8-a7ee4014594c)
+
+
+
+
