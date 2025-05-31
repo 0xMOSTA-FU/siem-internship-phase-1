@@ -723,7 +723,6 @@ These configurations can be customized to include or exclude specific processes,
 To install Sysmon, download it from the [Microsoft Sysinternals website](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) and run the following command in an elevated Command Prompt:([learn.microsoft.com][8])
 
 ```
-
 Sysmon.exe -accepteula -i sysmonconfig.xml
 ```
 
@@ -734,7 +733,6 @@ This command accepts the license agreement and installs Sysmon with the specifie
 Once installed, Sysmon logs can be viewed in the Windows Event Viewer under:([manageengine.com][10])
 
 ```
-
 Applications and Services Logs > Microsoft > Windows > Sysmon > Operational
 ```
 
