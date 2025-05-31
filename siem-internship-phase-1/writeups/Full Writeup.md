@@ -380,3 +380,7 @@ Explanation: This is a standard Windows Setup screen asking for the installation
 - Upgrade: Installs Windows while keeping existing files, settings, and applications. Only available if a compatible Windows version is already running.
 - Custom: Performs a clean installation of Windows, without migrating files or settings. This option is used for fresh installs or making changes to partitions.
 Purpose: To choose between upgrading an existing Windows installation or performing a clean install.
+
+![image](https://github.com/user-attachments/assets/dab45e57-e32f-4bda-b2a3-ac19887ad4c5)
+
+![image](https://github.com/user-attachments/assets/078a1e10-bea8-48db-be51-894050b72dc9)
