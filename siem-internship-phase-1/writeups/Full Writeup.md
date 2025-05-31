@@ -351,3 +351,32 @@ Alright, we’ve encountered a problem here. Fortunately, the solution is simple
 While creating the virtual machine, we’ll make one small change:
 Instead of attaching the **ISO file** during the machine setup process, we’ll **add the ISO after the machine has been created**.
 
+![image](https://github.com/user-attachments/assets/13232ae9-c1c2-4407-8fb1-da8f85c8d669)
+
+![image](https://github.com/user-attachments/assets/0472a3a9-22e6-4a08-9fde-f4f12dd92341)
+
+![image](https://github.com/user-attachments/assets/d11abe1a-2517-4f75-9736-9f4af45f2269)
+
+![image](https://github.com/user-attachments/assets/c6fd59f2-fd1f-4426-9d5e-8bd63d897aec)
+
+![image](https://github.com/user-attachments/assets/6da8936d-67da-4596-a80f-62633f3503be)
+
+![image](https://github.com/user-attachments/assets/9a980ab3-6617-4c7b-acc5-62d07b64f5bc)
+
+![image](https://github.com/user-attachments/assets/2a3592a9-dc88-472d-af70-7ee83bc1c407)
+
+
+![image](https://github.com/user-attachments/assets/26f76022-a58a-449e-babf-b9590882b1e7)
+
+![image](https://github.com/user-attachments/assets/eddb56ba-5090-4353-ab64-9750c7bbed18)
+
+![image](https://github.com/user-attachments/assets/78c27735-8adc-46b0-bb0c-e34afd543fe2)
+
+![image](https://github.com/user-attachments/assets/2f158f01-a42b-459c-b195-90cb6c41d668)
+
+(Windows Installation Options):
+
+Explanation: This is a standard Windows Setup screen asking for the installation type.
+- Upgrade: Installs Windows while keeping existing files, settings, and applications. Only available if a compatible Windows version is already running.
+- Custom: Performs a clean installation of Windows, without migrating files or settings. This option is used for fresh installs or making changes to partitions.
+Purpose: To choose between upgrading an existing Windows installation or performing a clean install.
