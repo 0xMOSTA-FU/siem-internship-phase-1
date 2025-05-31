@@ -270,3 +270,29 @@ And why choose Debian? For a few reasons:
 
 Explanation: This step allows you to name your virtual machine and choose its storage location on your host computer.
 Purpose: Assigns a name and specifies the storage path for the VM files.
+
+![image](https://github.com/user-attachments/assets/90d4e070-e4df-49c3-845f-2845244938c6)
+(Specify Disk Capacity):
+
+* **Explanation:** This screen lets you set the size of the virtual hard disk for your VM and how its files are stored on your physical computer.
+    * **Maximum disk size (GB):** You specify the largest amount of space the virtual disk can take.
+    * **Recommended size:** VMware suggests a size (e.g., 20 GB for Debian) for optimal performance and basic usage.
+    * **Store virtual disk as a single file:** All the VM's disk data is kept in one large file.
+    * **Split virtual disk into multiple files:** The VM's disk data is broken into smaller files, which can make it easier to move the VM, but might slightly reduce performance for very large disks.
+* **Purpose:** To define the size and storage method of the VM's virtual hard drive.
+![image](https://github.com/user-attachments/assets/39cc8345-1379-47f5-b0ae-402f31fc6153)
+
+**(Ready to Create Virtual Machine):**
+
+* **Explanation:** This is the final step in the New Virtual Machine Wizard. This screen provides a summary of all the settings you've chosen for your virtual machine before it's actually created.
+    * **Name:** The name you assigned to your virtual machine (e.g., "Parrot test").
+    * **Location:** The path on your host computer where the virtual machine's files will be stored.
+    * **Version:** The VMware Workstation version with which this virtual machine will be compatible.
+    * **Operating System:** The guest operating system you selected (e.g., "Debian 12.x 64-bit").
+    * **Hard Disk:** The size of the virtual hard disk (e.g., "20 GB") and how it's stored (e.g., "Split" into multiple files).
+    * **Memory:** The amount of RAM allocated to the virtual machine (e.g., "2048 MB = 2 GB").
+    * **Network Adapter:** The type of network connection (e.g., "NAT").
+    * **Other Devices:** A summary of other virtual hardware components, such as the number of CPU cores (e.g., "2 CPU cores"), CD/DVD drive, USB controller, and Sound Card.
+* **Customize Hardware...:** This button allows you to go back and modify any hardware settings (like RAM, processor, hard disk, network) before finalizing.
+* **Finish:** Clicking this button tells VMware to proceed with creating the virtual machine with the summarized settings, making it ready for you to power on and install the operating system.
+* **Purpose:** To review and confirm the final configuration settings of the virtual machine before its creation, offering a last chance for modifications.
