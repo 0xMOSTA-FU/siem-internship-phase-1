@@ -556,7 +556,7 @@ Effective logging is a cornerstone of robust software systems, enabling visibili
 
 **Monitoring** involves the continuous observation of system performance and health. It enables the detection of issues in real-time, allowing for prompt responses to potential problems.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0c6bbb09-7d63-42d0-a783-b88d4bf7cae9)
 
 **Best Practices:**
 
