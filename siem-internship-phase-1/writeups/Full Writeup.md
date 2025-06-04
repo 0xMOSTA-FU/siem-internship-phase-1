@@ -866,15 +866,15 @@ A **cluster** is a collection of **one or more nodes** working together.
 
 ### **C. Index**
 An **index** is like a **database table** in RDBMS.  
-- Stores related documents (e.g., `web-logs-2023`, `firewall-logs`).
+- Stores related documents (e.g., `web-logs-2025`, `firewall-logs`).
 - Each index is split into **shards** (for scalability) and **replicas** (for fault tolerance).
 
 ### **D. Document**
 A **document** is a **JSON record** stored in an index.  
-- Example: A log entry in `web-logs-2023`:
+- Example: A log entry in `web-logs-2025`:
   ```json
   {
-    "timestamp": "2023-10-01T12:00:00Z",
+    "timestamp": "2025-10-01T12:00:00Z",
     "source_ip": "192.168.1.1",
     "message": "Failed login attempt",
     "status": "ERROR"
@@ -882,10 +882,10 @@ A **document** is a **JSON record** stored in an index.
   ```
 
 ### **E. Shards & Replicas**
-- **Shard**: A **subset of an index** (e.g., `web-logs-2023` has **5 shards**).
+- **Shard**: A **subset of an index** (e.g., `web-logs-2025` has **5 shards**).
 - **Replica**: A **copy of a shard** (for redundancy).  
 - Example:  
-  - Index: `web-logs-2023` (5 primary shards, 1 replica).  
+  - Index: `web-logs-2025` (5 primary shards, 1 replica).  
   - Total shards = **5 primary + 5 replica = 10 shards**.
 
 ---
