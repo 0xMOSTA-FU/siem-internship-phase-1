@@ -838,7 +838,7 @@ The ELK Stack follows a **pipeline-based architecture** where data flows in the 
 #### **Scenario 1: Using Beats (Filebeat) → Logstash → Elasticsearch → Kibana**
 1. **Filebeat** reads logs from `/var/log/syslog` and sends them to **Logstash** (port **5044**).
 2. **Logstash** processes logs (e.g., extracts IPs, timestamps, error codes) and forwards them to **Elasticsearch** (port **9200**).
-3. **Elasticsearch** indexes logs in an index named `logs-2023-10-01`.
+3. **Elasticsearch** indexes logs in an index named `logs-2023-10-01`, `logs-2024-10-01`, `logs-2025-10-01`.
 4. **Kibana** (port **5601**) connects to Elasticsearch and visualizes logs in dashboards.
 
 #### **Scenario 2: Direct Beats → Elasticsearch (No Logstash)**
