@@ -21,6 +21,10 @@ We’ll also need to download a **Windows 10** image, and we can get the ISO fil
 Additionally, we’ll download a Linux machine, whether it’s **Ubuntu**, **Parrot**, **Kali**, etc.
 
 
+# Why did you choose Windows OS specifically for this lab?
+As you Know, the most used Operating System (OS) worldwide is Microsoft Windows. Attackers know this, and every day, they develop new malware and techniques to target Microsoft Windows OS platforms. As a SOC analyst, you must understand the provided event logs by Microsoft in Windows environments that help you to investigate and detect cyber breaches.
+## -ENG MOSTAFA YAHIA (Effective Threat Investigation for SOC Analysts Book).
+
 
 ---
 
