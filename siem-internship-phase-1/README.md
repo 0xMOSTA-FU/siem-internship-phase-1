@@ -32,6 +32,7 @@ SIEM can catch signs of:
 ## Tools Used
 - Kibana
 - Winlogbeat
+- Sysmon
 - elasicsearch
 - PowerShell
 - curl / nmap / 
@@ -49,6 +50,7 @@ SIEM can catch signs of:
 - VMware: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
 - Parrot OS: https://parrotsec.org/
 - Windows 10: https://www.microsoft.com/en-us/software-download/windows10
+- Sysmon: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
 
 
 
