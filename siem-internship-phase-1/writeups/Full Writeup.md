@@ -1406,3 +1406,39 @@ curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:your_password http
 
 The manual method gives you more control but requires extra steps compared to using APT. It's particularly useful for air-gapped systems or when you need to manage versions precisely. Just remember you'll need to manually download and verify future updates rather than using apt upgrade.
 
+
+Now we move on to the common part, which is starting, preparation, setup, and adjusting the configuration files.
+
+The common post-installation steps:
+
+### **Common Post-Installation Steps (For Both Methods)**
+
+```bash
+# 1. Edit basic configuration
+sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+Add/modify these settings:
+```yaml
+cluster.name: my-cluster
+network.host: 0.0.0.0
+```
+
+```bash
+# 2. Restart the service
+sudo systemctl restart elasticsearch
+
+# 3. Verify it's running
+curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:your_password https://localhost:9200
+```
+
+### **Key Notes:**
+1. The `elastic` user password is auto-generated on first install (check logs with `sudo journalctl -u elasticsearch`)
+2. `network.host: 0.0.0.0` makes it accessible from other machines (use specific IP in production)
+3. The curl command uses the auto-generated HTTPS certificate (`http_ca.crt`)
+
+For production environments, you should also:
+- Set proper firewall rules
+- Configure proper memory limits in `/etc/elasticsearch/jvm.options`
+- Change the default password immediately
+
+
