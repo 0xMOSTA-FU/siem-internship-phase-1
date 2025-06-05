@@ -1441,6 +1441,7 @@ For production environments, you should also:
 - Configure proper memory limits in `/etc/elasticsearch/jvm.options`
 - Change the default password immediately
 
+# This is the link to the official documentation, so if you’re planning to work on the ELK Stack, I recommend visiting it, reading it, and understanding it well before proceeding. -------> [https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package]
 
 #### Pay attention—in the upcoming images, you’ll notice that I’m also setting up Kibana because I had downloaded it beforehand. However, I haven’t explained it yet in this article, specifically in this part. We’ll talk about it in the next plan, so stay tuned.
 
@@ -1465,4 +1466,6 @@ For production environments, you should also:
 ![449498606-d4ade5fc-2fc0-4da3-ae11-daea7ead8d7f](https://github.com/user-attachments/assets/7f20fa20-5499-43d8-b637-fc8bd5544472)
 
 ![449498615-f9d814cf-d718-400c-95be-4ab9372d0eff](https://github.com/user-attachments/assets/2d4edcf9-ec2e-4120-adc9-9da2e6eef2c2)
+
+# This is the link to the official documentation, so if you’re planning to work on the ELK Stack, I recommend visiting it, reading it, and understanding it well before proceeding. -------> [https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package]
 
