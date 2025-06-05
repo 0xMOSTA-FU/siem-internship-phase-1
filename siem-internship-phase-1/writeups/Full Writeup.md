@@ -1658,6 +1658,7 @@ All Kibana settings are managed through:
 
 
 manual: 
+
 ![449498178-eaf68aa3-88f5-41b0-8cec-83166d2afea1](https://github.com/user-attachments/assets/7fa617a8-5474-4cf5-a743-3b2fa3048900)
 
 ![449498207-150980f9-172c-429a-a8ca-6461a0a57f4c](https://github.com/user-attachments/assets/7e5cd6d5-cd88-4c6f-8bef-6d150d064ba7)
