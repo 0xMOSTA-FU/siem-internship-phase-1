@@ -1179,7 +1179,7 @@ PUT /_cluster/settings
 
 
 
-### ** Elasticsearch Installation on Debian/Ubuntu**
+### **Elasticsearch Installation on Debian/Ubuntu**
 
 This guide breaks down each step with technical depth, explaining **what happens at the system level** when installing Elasticsearch.
 
