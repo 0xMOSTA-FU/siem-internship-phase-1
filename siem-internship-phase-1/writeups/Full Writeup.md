@@ -1673,3 +1673,10 @@ manual:
 
 ![449498500-5c22199c-e68d-4b2b-9e98-59cb90c06117](https://github.com/user-attachments/assets/a67fd5e9-83ce-48a9-b1a4-931fe64b8c77)
 
+![449498518-943856f3-d4f6-47cf-b6b9-d11e92e1fa4f](https://github.com/user-attachments/assets/5fb21166-0549-49ae-b5cd-cb0797f2d8f9)
+
+![449498665-252793a7-ed17-46a8-98c8-ff822dd37d9c](https://github.com/user-attachments/assets/da2ffe12-9694-421f-a0dc-8ebb8fa539aa)
+
+------
+### Now that we’ve downloaded Elasticsearch and Kibana and modified the settings and since we’ve already explained everything related to downloading and configuration let’s now connect these two components together: Elasticsearch and Kibana.
+------
