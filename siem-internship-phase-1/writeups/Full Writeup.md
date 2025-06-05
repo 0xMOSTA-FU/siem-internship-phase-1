@@ -1653,5 +1653,22 @@ All Kibana settings are managed through:
 
 ---
 
+![449498137-140bb613-3f57-4054-84b1-81a54065fa11](https://github.com/user-attachments/assets/b746490f-8df2-4f5c-8d2b-91ad6bde82f0)
 
+
+
+manual: 
+![449498178-eaf68aa3-88f5-41b0-8cec-83166d2afea1](https://github.com/user-attachments/assets/7fa617a8-5474-4cf5-a743-3b2fa3048900)
+
+![449498207-150980f9-172c-429a-a8ca-6461a0a57f4c](https://github.com/user-attachments/assets/7e5cd6d5-cd88-4c6f-8bef-6d150d064ba7)
+
+![449498229-298b7cfd-3b9d-40ea-bc3a-497c3c36aa67](https://github.com/user-attachments/assets/61ef3548-0fc8-47e4-aef8-c9f9af00ee51)
+
+![449498253-5c520bf2-289b-4061-9d4d-67e1bd206e90](https://github.com/user-attachments/assets/8bd97b46-7001-4d90-bd23-211f72d5a59d)
+
+![449498281-3b5c346f-7d62-49b3-8d2c-13e327e09c4b](https://github.com/user-attachments/assets/160ae527-9fdd-4b21-9c9a-49bc13e1bd3e)
+
+![449498476-63eeeb69-2562-4e64-8d11-396e9f408d22](https://github.com/user-attachments/assets/ca9d71ea-7669-4725-a401-349f29a151fb)
+
+![449498500-5c22199c-e68d-4b2b-9e98-59cb90c06117](https://github.com/user-attachments/assets/a67fd5e9-83ce-48a9-b1a4-931fe64b8c77)
 
