@@ -1443,7 +1443,7 @@ For production environments, you should also:
 
 # This is the link to the official documentation, so if you’re planning to work on the ELK Stack, I recommend visiting it, reading it, and understanding it well before proceeding. -------> [https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package]
 
-#### Pay attention—in the upcoming images, you’ll notice that I’m also setting up Kibana because I had downloaded it beforehand. However, I haven’t explained it yet in this article, specifically in this part. We’ll talk about it in the next plan, so stay tuned.
+### Pay attention—in the upcoming images, you’ll notice that I’m also setting up Kibana because I had downloaded it beforehand. However, I haven’t explained it yet in this article, specifically in this part. We’ll talk about it in the next plan, so stay tuned.
 
 ![449498113-1a01e21b-be9f-4641-abc2-27614948fb1f](https://github.com/user-attachments/assets/0ebe1cdf-4866-46fb-96c0-8ead84123741)
 
