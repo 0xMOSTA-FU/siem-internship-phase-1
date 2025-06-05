@@ -1441,6 +1441,9 @@ For production environments, you should also:
 - Configure proper memory limits in `/etc/elasticsearch/jvm.options`
 - Change the default password immediately
 
+
+#### Pay attention—in the upcoming images, you’ll notice that I’m also setting up Kibana because I had downloaded it beforehand. However, I haven’t explained it yet in this article, specifically in this part. We’ll talk about it in the next plan, so stay tuned.
+
 ![449498113-1a01e21b-be9f-4641-abc2-27614948fb1f](https://github.com/user-attachments/assets/0ebe1cdf-4866-46fb-96c0-8ead84123741)
 
 ![449498127-fd365b16-336f-46fe-9842-67023dd47375](https://github.com/user-attachments/assets/aa2d31be-470c-4641-9132-77880caff477)
