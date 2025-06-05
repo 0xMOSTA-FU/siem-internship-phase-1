@@ -1469,3 +1469,189 @@ For production environments, you should also:
 
 # This is the link to the official documentation, so if you’re planning to work on the ELK Stack, I recommend visiting it, reading it, and understanding it well before proceeding. -------> [https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package]
 
+# Now, let’s talk about installing Kibana.
+
+---
+
+##  **Installing Kibana on Debian/Ubuntu Using the Debian Package**
+
+Kibana can be installed on any Debian-based Linux distribution (like Debian or Ubuntu) using the official `.deb` package. The package includes both free and paid features — you can activate a 30-day trial to try all features.
+
+---
+
+###  **Step 1: Import Elastic PGP Signing Key**
+
+Elastic signs its packages with a PGP key to ensure authenticity. You need to import this key before installing Kibana.
+
+```bash
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+```
+
+>  **Why?**
+> This ensures your system can verify the authenticity of the package you're downloading and installing.
+
+---
+
+###  **Step 2: Install Kibana**
+
+#### Option A: Install via APT Repository (Recommended)
+
+1. **Ensure HTTPS support is available in APT:**
+
+```bash
+sudo apt-get install apt-transport-https
+```
+
+2. **Add Elastic’s APT repository:**
+
+```bash
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list
+```
+
+3. **Update and install Kibana:**
+
+```bash
+sudo apt-get update && sudo apt-get install kibana
+```
+
+>  **Warnings**
+
+* Do **not** use `add-apt-repository`. It may add a `deb-src` entry, which is not supported and can cause errors.
+* Avoid duplicate repository entries to prevent `Duplicate sources.list entry` errors.
+
+#### Option B: Manual Installation
+
+1. **Download the `.deb` package:**
+
+```bash
+wget https://artifacts.elastic.co/downloads/kibana/kibana-9.0.0-amd64.deb
+```
+
+2. **(Optional) Verify file integrity:**
+
+```bash
+shasum -a 512 kibana-9.0.0-amd64.deb
+```
+
+3. **Install Kibana:**
+
+```bash
+sudo dpkg -i kibana-9.0.0-amd64.deb
+```
+
+---
+
+###  **Step 3: Start Elasticsearch and Generate Enrollment Token**
+
+Start your **Elasticsearch** instance first. On first run, it will:
+
+* Create TLS certificates
+* Set up `elasticsearch.yml`
+* Set password for the `elastic` user
+* Generate an **enrollment token** for Kibana
+
+>  **If the token expires**, regenerate it:
+
+```bash
+bin/elasticsearch-create-enrollment-token -s kibana
+```
+
+---
+
+###  **Step 4 (Optional): Make Kibana Accessible from Other Devices**
+
+By default, Kibana listens only on `localhost`.
+
+1. **Edit `/etc/kibana/kibana.yml`:**
+
+```yaml
+server.host: "0.0.0.0"
+```
+
+>  Use `0.0.0.0` to allow external access on any interface, or use a specific IP address for better security.
+
+---
+
+###  **Step 5: Manage Kibana with systemd**
+
+Set Kibana to start on system boot:
+
+```bash
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable kibana.service
+```
+
+Start and stop the service manually:
+
+```bash
+sudo systemctl start kibana.service
+sudo systemctl stop kibana.service
+```
+
+>  To check status:
+
+```bash
+sudo systemctl status kibana
+```
+
+>  To view logs:
+
+```bash
+journalctl -u kibana.service
+```
+
+---
+
+###  **Step 6: Enroll Kibana with Elasticsearch**
+
+1. Check Kibana status and look for the verification message:
+
+```bash
+sudo systemctl status kibana
+```
+
+You'll see something like:
+
+```
+Go to http://<host>:5601/?code=123456 to get started.
+```
+
+2. Open that link in your browser.
+3. Enter the **enrollment token** you got earlier from Elasticsearch.
+4. Click **Configure Elastic**.
+5. When prompted, enter the 6-digit verification code from the status output.
+
+Once setup completes:
+
+* Use `elastic` as the username
+* Use the password from Elasticsearch setup
+
+---
+
+###  **Step 7: Customize Kibana Configuration**
+
+All Kibana settings are managed through:
+
+```bash
+/etc/kibana/kibana.yml
+```
+
+>  You can set things like Elasticsearch host, Kibana ports, logging options, and plugins here.
+
+---
+
+###  **Kibana Directory Structure in Debian Package**
+
+| Component | Description                     | Path                        |
+| --------- | ------------------------------- | --------------------------- |
+| Home      | Kibana base directory           | `/usr/share/kibana`         |
+| Binaries  | Start Kibana & install plugins  | `/usr/share/kibana/bin`     |
+| Config    | Main config file (`kibana.yml`) | `/etc/kibana`               |
+| Data      | Data storage for Kibana         | `/var/lib/kibana`           |
+| Logs      | Log files                       | `/var/log/kibana`           |
+| Plugins   | Installed plugins               | `/usr/share/kibana/plugins` |
+
+---
+
+
+
