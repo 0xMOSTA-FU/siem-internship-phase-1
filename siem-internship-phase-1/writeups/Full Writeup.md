@@ -1233,8 +1233,6 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 sudo apt update && sudo apt install elasticsearch
 ```
 
-![Screenshot 2025-05-14 200824](https://github.com/user-attachments/assets/53094bb1-04f9-427c-89da-0a13af163597)
-
 ### **What Happens Under the Hood:**
 1. **`apt update`**  
    - Fetches the latest package lists, including Elasticsearch’s repo.  
@@ -1254,6 +1252,8 @@ sudo apt update && sudo apt install elasticsearch
      - **TLS certificates** (`/etc/elasticsearch/certs/`).  
      - **`elastic` user password** (logged in `/var/log/elasticsearch/`).  
    - Binds HTTP to `0.0.0.0` (accessible externally).  
+
+![Screenshot 2025-05-14 200824](https://github.com/user-attachments/assets/53094bb1-04f9-427c-89da-0a13af163597)
 
 ---
 
