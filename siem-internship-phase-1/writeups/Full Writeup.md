@@ -1232,6 +1232,9 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 ```bash
 sudo apt update && sudo apt install elasticsearch
 ```
+
+![Screenshot 2025-05-14 200824](https://github.com/user-attachments/assets/53094bb1-04f9-427c-89da-0a13af163597)
+
 ### **What Happens Under the Hood:**
 1. **`apt update`**  
    - Fetches the latest package lists, including Elasticsearch’s repo.  
@@ -1348,4 +1351,58 @@ curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:your_password http
 - The Debian package **automates security**, logging, and service management.  
 - For **production**, further tuning is needed (e.g., separate data drives, dedicated `elasticsearch` user).  
 
+
+---
+
+### Manual Elasticsearch Installation (Debian/Ubuntu)
+
+If you prefer downloading Elasticsearch directly rather than using the APT repository, here's how to do it properly:
+
+First, we'll download both the Debian package and its checksum file from Elastic's official servers. This ensures we're getting authentic files. The commands:
+```bash
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-amd64.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.0.0-amd64.deb.sha512
+```
+
+Before installing, it's crucial to verify the package integrity. The SHA512 checksum acts like a digital fingerprint - we're making sure no one tampered with the file during download. Run:
+```bash
+shasum -a 512 -c elasticsearch-9.0.0-amd64.deb.sha512
+```
+You should see "OK" if the file is valid. If not, redownload it - something went wrong.
+
+Now for the actual installation using dpkg:
+```bash
+sudo dpkg -i elasticsearch-9.0.0-amd64.deb
+```
+This command unpacks everything to the right places:
+- The main program goes to /usr/share/elasticsearch
+- Configuration files land in /etc/elasticsearch
+- Data will be stored in /var/lib/elasticsearch
+
+![Screenshot 2025-05-12 172109](https://github.com/user-attachments/assets/5685e362-b442-40e0-8548-cb2a0e59bdd6)
+
+
+
+The installer automatically creates a dedicated 'elasticsearch' system user for security and sets up the systemd service. You can enable it to start on boot with:
+```bash
+sudo systemctl enable elasticsearch
+```
+
+After installation, you'll want to edit the config file:
+```bash
+sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+At minimum, set your cluster name and network binding. For a development setup, you might use:
+```yaml
+cluster.name: my-dev-cluster
+network.host: 0.0.0.0
+```
+
+Finally, start the service and verify it's working:
+```bash
+sudo systemctl start elasticsearch
+curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:your_password https://localhost:9200
+```
+
+The manual method gives you more control but requires extra steps compared to using APT. It's particularly useful for air-gapped systems or when you need to manage versions precisely. Just remember you'll need to manually download and verify future updates rather than using apt upgrade.
 
