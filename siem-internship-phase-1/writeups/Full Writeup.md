@@ -1441,4 +1441,25 @@ For production environments, you should also:
 - Configure proper memory limits in `/etc/elasticsearch/jvm.options`
 - Change the default password immediately
 
+![449498113-1a01e21b-be9f-4641-abc2-27614948fb1f](https://github.com/user-attachments/assets/0ebe1cdf-4866-46fb-96c0-8ead84123741)
+
+![449498127-fd365b16-336f-46fe-9842-67023dd47375](https://github.com/user-attachments/assets/aa2d31be-470c-4641-9132-77880caff477)
+
+![449498253-5c520bf2-289b-4061-9d4d-67e1bd206e90](https://github.com/user-attachments/assets/aba15b7e-7d33-4485-a0f6-057a23cff8f4)
+
+![449498321-b00e3dcc-5702-4c8f-b241-212bcd16e226](https://github.com/user-attachments/assets/caa8d1aa-c9df-4691-b33f-7f63b43bb219)
+
+![449498356-45bdfe0f-4080-4736-93af-cb1e7b6b414d](https://github.com/user-attachments/assets/49709704-eb20-41a6-8612-691f6ee8c61e)
+
+![449498443-8fffaffc-0f78-409b-ae09-0de8d1f56398](https://github.com/user-attachments/assets/5bbd7c8e-58cd-4b4f-88f5-941d4ae824b7)
+
+![449498529-26f6102c-f1dc-4e05-906e-7f00caf03f46](https://github.com/user-attachments/assets/95914651-b01d-40b3-91ed-7aa609814c01)
+
+![449498560-76633265-39ad-4ed4-9cb7-cf2ab0568963](https://github.com/user-attachments/assets/b1c9a34b-abad-499b-8f16-7f3c2a3c5aaa)
+
+![449498586-2722475e-0eee-4d46-b2a9-168133fd6d95](https://github.com/user-attachments/assets/8fd4cb81-8e69-43aa-8666-8d30fb261fbd)
+
+![449498606-d4ade5fc-2fc0-4da3-ae11-daea7ead8d7f](https://github.com/user-attachments/assets/7f20fa20-5499-43d8-b637-fc8bd5544472)
+
+![449498615-f9d814cf-d718-400c-95be-4ab9372d0eff](https://github.com/user-attachments/assets/2d4edcf9-ec2e-4120-adc9-9da2e6eef2c2)
 
