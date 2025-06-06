@@ -1731,3 +1731,301 @@ It shows you the **Kibana verification code**, which is usually generated the **
 
 
 Now, let’s download Winlogbeat and Sysmon on our log source device, which is the designated target in this lab currently running Microsoft Windows 10.  Let’s go ahead and start explaining the download steps right away. Previously, we’ve already covered a detailed explanation of Sysmon, the concept of logs, Winlogbeat, and also Event Viewer. 
+
+
+---
+
+## **Quick Start Guide: Installing and Configuring Winlogbeat**
+
+This step-by-step guide walks you through the process of setting up **Winlogbeat** for monitoring Windows event logs. It covers everything from installation to visualization using the **Elastic Stack**. By the end of this guide, you'll know how to:
+
+* Install Winlogbeat on any Windows system you want to monitor
+* Define which logs you want to collect
+* Send log data to **Elasticsearch** for indexing
+* Use **Kibana** to visualize and explore your log data using dashboards
+
+![image](https://github.com/user-attachments/assets/8a3ccb39-bfdc-4bad-a802-f07f69e2f7b4)
+
+---
+
+### **Prerequisites**
+
+To get started, you must have:
+
+* An **Elasticsearch instance** (used to store and search the logs)
+* **Kibana** (used to visualize and manage the collected data)
+
+You can choose between:
+
+####  **Elastic Cloud (Hosted Solution)**
+
+A quick way to deploy the Elastic Stack using a managed service on platforms like **AWS**, **Google Cloud**, or **Azure**. It’s ideal for getting started without setting up infrastructure. Free trial available.
+
+####  **Self-Managed Deployment**
+
+If you prefer to install and manage everything yourself, you can set up Elasticsearch and Kibana locally or on your own servers.
+
+---
+
+### **Step 1: Install Winlogbeat**
+
+1. Download the Winlogbeat `.zip` file from the [Elastic downloads page](https://www.elastic.co/downloads/beats/winlogbeat).
+2. Extract the contents to:
+   `C:\Program Files`
+3. Rename the extracted folder to:
+   `Winlogbeat`
+4. Open **PowerShell** as Administrator (Right-click → Run as Administrator)
+5. Navigate to the Winlogbeat directory and install the service:
+
+```powershell
+cd 'C:\Program Files\Winlogbeat'
+.\install-service-winlogbeat.ps1
+```
+
+>  **Security Warning:**
+> PowerShell may prompt you with a warning about running the script. If you trust the script source, you can unblock it using:
+> `Unblock-File .\install-service-winlogbeat.ps1`
+
+If script execution is disabled, allow it for this session using:
+
+```powershell
+PowerShell.exe -ExecutionPolicy UnRestricted -File .\install-service-winlogbeat.ps1
+```
+
+---
+
+### **Step 2: Connect Winlogbeat to the Elastic Stack**
+
+To send logs to Elasticsearch and load dashboards into Kibana, configure the connection settings in the `winlogbeat.yml` file.
+
+#### For Elastic Cloud Users:
+
+Add the following configuration:
+
+```yaml
+cloud.id: "your_cloud_id"
+cloud.auth: "username:password"
+```
+
+Note: It’s best to store passwords securely using the **Elastic Keystore** rather than writing them directly in the file.
+
+#### For Self-Managed Users:
+
+Refer to the documentation to assign the correct roles and privileges to the Winlogbeat user.
+
+---
+### **Configuring Elasticsearch and Kibana for Winlogbeat**
+
+To enable Winlogbeat to send data to your **Elasticsearch** cluster and set up dashboards in **Kibana**, you need to configure the appropriate output and setup sections in the `winlogbeat.yml` configuration file.
+
+---
+
+### **1. Configure Elasticsearch Output**
+
+Specify the **host and port** of your Elasticsearch node, as well as the **username and password** of a user who has the necessary privileges to publish events and set up Winlogbeat assets (like index templates and ingest pipelines).
+
+```yaml
+output.elasticsearch:
+  hosts: ["https://myEShost:9200"]
+  username: "winlogbeat_internal"
+  password: "YOUR_PASSWORD"
+  ssl:
+    enabled: true
+    ca_trusted_fingerprint: "b9a10bbe64ee9826abeda6546fc988c8bf798b41957c33d05db736716513dc9c"
+```
+
+####  **Important Notes on Security Settings:**
+
+* **Hard-coded credentials** (like `password`) are used here for simplicity, but it is highly recommended to store sensitive information securely using the **Elasticsearch keystore** instead of putting them directly in the config file.
+
+* The `ca_trusted_fingerprint` is a **SHA-256 fingerprint** of the **Certificate Authority (CA)** certificate used by Elasticsearch for TLS encryption. This is a **hexadecimal-encoded** string that allows Winlogbeat to verify the identity of the Elasticsearch server and establish a secure connection.
+
+####  **About TLS in Elasticsearch:**
+
+When Elasticsearch is run for the first time, it generates a **self-signed certificate** and **enables security features by default**, including encryption via TLS. If you're using this default setup, you'll need to copy the **CA fingerprint** from the Elasticsearch logs during startup.
+
+> For alternative methods of retrieving the fingerprint or if you're using your own custom SSL certificate, refer to the [Elastic documentation on secure client connections](https://www.elastic.co/guide/en/beats/winlogbeat/current/configuring-ssl.html).
+
+---
+
+### **2. Configure Kibana Access (Optional but Recommended)**
+
+If you plan to load the **pre-built dashboards** provided by Winlogbeat into **Kibana**, you must configure the Kibana endpoint. This step can be skipped if Kibana is running on the same machine and uses default settings, but it’s best practice to define it explicitly.
+
+```yaml
+setup.kibana:
+  host: "mykibanahost:5601"
+  username: "my_kibana_user"
+  password: "YOUR_PASSWORD"
+```
+
+####  **Explanation of Fields:**
+
+* `host`: This is the **hostname and port** where Kibana is accessible. For example:
+
+  * Basic: `mykibanahost:5601`
+  * With path: `http://mykibanahost:5601/custom/path`
+
+* `username` and `password`: These credentials are **optional**. If not specified, Winlogbeat will reuse the **Elasticsearch output credentials**. However, if you provide different credentials here, ensure that the user has permission to **load dashboards and access Kibana features**.
+
+>  The user assigned for Kibana setup should have the `kibana_admin` built-in role or equivalent permissions.
+
+---
+
+###  Summary
+
+| Section                | What to Configure                    | Why                                                      |
+| ---------------------- | ------------------------------------ | -------------------------------------------------------- |
+| `output.elasticsearch` | Host, user, password, CA fingerprint | Allows Winlogbeat to send logs securely to Elasticsearch |
+| `setup.kibana`         | Host, (optional) credentials         | Loads dashboards and visualizations into Kibana          |
+
+---
+
+### **Step 3: Configure the Logs to Monitor**
+
+Edit the `winlogbeat.yml` file to specify which Windows event logs should be collected. By default, it monitors:
+
+```yaml
+winlogbeat.event_logs:
+  - name: Application
+  - name: Security
+  - name: System
+```
+
+To list all available logs on your system, run:
+
+```powershell
+Get-EventLog -List
+```
+
+#### Optional: Enable Logging for Winlogbeat Itself
+
+```yaml
+logging.to_files: true
+logging.files:
+  path: C:\ProgramData\winlogbeat\Logs
+logging.level: info
+```
+
+After updating the configuration, test it with:
+
+```powershell
+.\winlogbeat.exe test config -c .\winlogbeat.yml -e
+```
+
+---
+
+### **Step 4: Load Default Assets**
+
+Winlogbeat provides built-in assets for easier setup:
+
+* Index templates (for proper data mapping in Elasticsearch)
+* Ingest pipelines (to process the log data)
+* Kibana dashboards (to visualize logs)
+
+Load these assets by running:
+
+```powershell
+.\winlogbeat.exe setup -e
+```
+
+>  **Note:** You must have a valid connection to Elasticsearch for this step. If you're using Logstash instead, refer to the documentation for manual asset loading.
+
+---
+
+### **Step 5: Start the Winlogbeat Service**
+
+Make sure your credentials in `winlogbeat.yml` allow publishing events.
+
+Start the service:
+
+```powershell
+Start-Service winlogbeat
+```
+
+Verify the service is running via:
+
+```powershell
+services.msc
+```
+
+Logs will be available at:
+
+```
+C:\ProgramData\winlogbeat\Logs\winlogbeat
+```
+
+---
+
+### **Step 6: View Logs in Kibana**
+
+After setup, open Kibana to view dashboards:
+
+#### For Elastic Cloud:
+
+* Log into your Elastic Cloud account
+* Navigate to the Kibana endpoint
+
+#### For Self-Managed Users:
+
+* Open Kibana in your browser
+* Go to **Discover** and make sure the `winlogbeat-*` index pattern is selected
+* Use **Dashboard** to explore pre-built visualizations
+
+>  **Tip:** If no data is visible, increase the time filter to a longer range (e.g., last 24 hours)
+
+---
+
+### **Optional: Run Winlogbeat with a Local (Non-Admin) Account**
+
+By default, Winlogbeat runs as the **Local System** account. If you want it to run under a **local user account** without admin privileges:
+
+1. Open Services Console:
+
+   ```powershell
+   services.msc
+   ```
+
+2. Right-click `winlogbeat` → **Properties** → **Log On** tab
+   Choose “This account”, browse for your local user, and enter its password.
+
+3. Open Local Group Policy Editor:
+
+   ```powershell
+   gpedit.msc
+   ```
+
+   Go to:
+   `Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment`
+
+   Add the local user to:
+
+   * **Log on as a service**
+
+4. Open Local Users and Groups:
+
+   ```powershell
+   lusrmgr.msc
+   ```
+
+   Add the user to the group:
+
+   * **Event Log Readers**
+
+This grants the user the permissions necessary to run Winlogbeat and read event logs.
+
+---
+
+###  Summary
+
+| Step | Action                                 |
+| ---- | -------------------------------------- |
+| 1    | Download and install Winlogbeat        |
+| 2    | Connect it to Elasticsearch and Kibana |
+| 3    | Configure the logs to monitor          |
+| 4    | Load default dashboards and pipelines  |
+| 5    | Start the Winlogbeat service           |
+| 6    | View logs in Kibana dashboards         |
+
+---
+
