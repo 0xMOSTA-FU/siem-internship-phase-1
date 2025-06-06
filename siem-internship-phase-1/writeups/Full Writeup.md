@@ -1680,3 +1680,12 @@ manual:
 ------
 ### Now that we’ve downloaded Elasticsearch and Kibana and modified the settings and since we’ve already explained everything related to downloading and configuration let’s now connect these two components together: Elasticsearch and Kibana.
 ------
+We will create a token and place it in Kibana, Using the following command:
+```bash
+
+[mosta@parrot] -[~]
+$ sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
+
+```
+![449498701-1102688a-66bf-44d9-b054-1f2f485b0c62](https://github.com/user-attachments/assets/6c3fd646-c227-42c9-9a5e-46cf1b6c116c)
+
