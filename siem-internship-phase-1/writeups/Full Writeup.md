@@ -2042,6 +2042,8 @@ After setup, open Kibana to view dashboards:
 
 #### For Self-Managed Users:
 
+Point your browser to http://localhost:5601, replacing localhost with the name of the Kibana host.
+
 * Open Kibana in your browser
 * Go to **Discover** and make sure the `winlogbeat-*` index pattern is selected
 * Use **Dashboard** to explore pre-built visualizations
@@ -2103,3 +2105,6 @@ This grants the user the permissions necessary to run Winlogbeat and read event 
 
 ---
 
+# [Don’t forget to check the official documentation for more information.](https://www.elastic.co/docs/reference/beats/winlogbeat/winlogbeat-installation-configuration)
+
+------
