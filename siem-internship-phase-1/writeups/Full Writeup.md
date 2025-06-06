@@ -1729,3 +1729,5 @@ It shows you the **Kibana verification code**, which is usually generated the **
 
 ![449499050-9dc13ce7-504a-4346-a209-22cdf3e6c606](https://github.com/user-attachments/assets/409253a3-6fb8-4af7-9064-c27ed0207fb7)
 
+
+Now, let’s download Winlogbeat and Sysmon on our log source device, which is the designated target in this lab currently running Microsoft Windows 10.  Let’s go ahead and start explaining the download steps right away. Previously, we’ve already covered a detailed explanation of Sysmon, the concept of logs, Winlogbeat, and also Event Viewer. 
