@@ -1850,6 +1850,7 @@ When Elasticsearch starts for the first time, it automatically enables **securit
 * If you're using your **own SSL certificate**, refer to the [Winlogbeat documentation](https://www.elastic.co/docs/reference/beats/winlogbeat/configuration-ssl#ssl-client-config) for steps to configure SSL accordingly.
 
 [Automatic security setup](https://www.elastic.co/docs/deploy-manage/security/self-auto-setup)
+
 [Secrets keystore for secure settings](https://www.elastic.co/docs/reference/beats/winlogbeat/keystore)
 
 ---
