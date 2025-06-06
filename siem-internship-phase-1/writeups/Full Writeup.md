@@ -1689,3 +1689,10 @@ $ sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s nod
 ```
 ![449498701-1102688a-66bf-44d9-b054-1f2f485b0c62](https://github.com/user-attachments/assets/6c3fd646-c227-42c9-9a5e-46cf1b6c116c)
 
+place it in Kibana:
+
+![449498718-28be2727-02ff-4aa5-abf1-0749a928ad4f](https://github.com/user-attachments/assets/ffa87129-f40a-4892-90db-3fb5cbf91aed)
+
+
+
+
