@@ -1759,7 +1759,7 @@ You can choose between:
 
 ####  **Elastic Cloud (Hosted Solution)**
 
-A quick way to deploy the Elastic Stack using a managed service on platforms like **AWS**, **Google Cloud**, or **Azure**. It’s ideal for getting started without setting up infrastructure. Free trial available.
+A quick way to deploy the Elastic Stack ((Elastic Cloud Hosted)[https://www.elastic.co/cloud?page=docs&placement=docs-body]) using a managed service on platforms like **AWS**, **Google Cloud**, or **Azure**. It’s ideal for getting started without setting up infrastructure. Free trial available[https://cloud.elastic.co/registration?page=docs&placement=docs-body].
 
 ####  **Self-Managed Deployment**
 
