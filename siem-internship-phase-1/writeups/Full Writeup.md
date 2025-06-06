@@ -1694,5 +1694,38 @@ place it in Kibana:
 ![449498718-28be2727-02ff-4aa5-abf1-0749a928ad4f](https://github.com/user-attachments/assets/ffa87129-f40a-4892-90db-3fb5cbf91aed)
 
 
+Alright, now we’ll need to get the Verification code that was sent to us after entering the token in order to complete the process and initialization.
 
+![449498735-310c131e-492d-4e8b-8cd0-539989739224](https://github.com/user-attachments/assets/cd43f1b6-3ec5-4b24-8a2f-a15915fc4fab)
+
+We can get the verification code using this command:
+
+```bash
+[x]-[mosta@parrot]-[~]
+  - $sudo journalctl -u kibana.service | grep "verification code"
+```
+
+### Explanation:
+
+* `sudo`: Runs the command with administrator (root) privileges.
+* `journalctl -u kibana.service`: Shows logs specifically for the Kibana service.
+* `| grep "verification code"`: Filters the logs to show only lines that contain the phrase **"verification code"**.
+
+### What it does:
+
+It shows you the **Kibana verification code**, which is usually generated the **first time you start Kibana**. This code is required to complete the initial setup or login.
+
+![449498745-00f7779b-dfee-4d7c-8d5c-075983fa470f](https://github.com/user-attachments/assets/54f53002-dbf1-4f3f-96ab-27e6c724926e)
+
+![449498769-49e9d28c-936f-41da-abaa-7b97d851333a](https://github.com/user-attachments/assets/2d193c73-bc62-4cf7-85a7-8a37c2efcda7)
+
+![449498799-422602a4-9e55-4551-bc45-bbc1cff1bdc5](https://github.com/user-attachments/assets/943bc0b2-64fb-4847-9b57-9a5ec12a45fc)
+
+![449498851-b0cda5ce-ce3d-4bc9-9572-d02834ccb23b](https://github.com/user-attachments/assets/b3ab06bc-1479-4633-ad23-5b417c159312)
+
+![449498914-872e5051-3344-42b4-92c1-2b89d3c5d74b](https://github.com/user-attachments/assets/8e7b60d9-4e13-4dcf-ad86-545110f850d7)
+
+![449498948-1b053848-e72e-4e2f-9e5d-58c516863cd9](https://github.com/user-attachments/assets/7b0e79c9-31f6-48e7-af01-a664c144f525)
+
+![449499050-9dc13ce7-504a-4346-a209-22cdf3e6c606](https://github.com/user-attachments/assets/409253a3-6fb8-4af7-9064-c27ed0207fb7)
 
