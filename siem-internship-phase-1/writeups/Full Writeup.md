@@ -2747,3 +2747,95 @@ Each Sysmon event type corresponds to a specific system activity. These are the 
 > ## Now it’s time for the final touches.
 > ## We’ll configure the `config.xml` file for Sysmon and apply another set of rules for different attacks.
 > ## We’ll document them here—and with that, our lab will be complete.
+
+
+how to properly configure the **Sysmon XML configuration file**, step by step:
+---
+
+###  1. **Understand the XML file purpose**
+
+The XML config tells Sysmon:
+
+* Which events to monitor
+* What conditions (filters) to apply
+* What to **include** or **exclude** in logging
+
+---
+
+###  2. **Use a Ready-Made Template (Recommended)**
+
+You can use a professionally crafted config, like:
+
+* **SwiftOnSecurity Sysmon Config**
+  🔗 [https://github.com/SwiftOnSecurity/sysmon-config](https://github.com/SwiftOnSecurity/sysmon-config)
+
+It includes:
+
+* Smart filtering to reduce noise
+* Covers most real-world threats and suspicious behaviors
+
+---
+
+###  3. **Customize Based on Your Needs**
+
+Here’s an example to monitor **only command-line executions with “whoami”** in `cmd.exe`:
+
+```xml
+<RuleGroup name="ProcessCreate" groupRelation="or">
+  <ProcessCreate onmatch="include">
+    <Image condition="end with">cmd.exe</Image>
+    <CommandLine condition="contains">/c whoami</CommandLine>
+  </ProcessCreate>
+</RuleGroup>
+```
+
+You can create rules like this for:
+
+* PowerShell
+* Remote access tools
+* Network connections
+* File modifications
+  ...etc.
+
+---
+
+###  4. **Apply the Configuration File**
+
+Run CMD or PowerShell as administrator:
+
+* To install Sysmon with your config:
+
+```bash
+Sysmon64.exe -accepteula -i sysmonconfig.xml
+```
+
+* To update the config without reinstalling:
+
+```bash
+Sysmon64.exe -c sysmonconfig.xml
+```
+
+---
+
+###  5. **Check It’s Working**
+
+Go to Event Viewer:
+
+```
+Applications and Services Logs → Microsoft → Windows → Sysmon → Operational
+```
+
+You should see Sysmon event logs there.
+
+---
+
+###  6. **Tips**
+
+* Always back up your XML before editing.
+* Use `exclude` rules to reduce noise.
+* Test your configuration in a lab before using in production.
+* Avoid logging **everything** — it will overwhelm your system.
+
+---
+
+
