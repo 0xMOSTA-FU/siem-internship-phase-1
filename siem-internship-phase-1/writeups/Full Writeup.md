@@ -2416,3 +2416,6 @@ and add this:
 # Take a good look at the following diagram,
 # then let’s get started.
 ```
+![Screenshot 2025-05-20 111801](https://github.com/user-attachments/assets/dd91979c-422f-4a28-b9cb-143b19fe873c)
+
+
