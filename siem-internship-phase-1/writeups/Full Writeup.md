@@ -2141,4 +2141,20 @@ This grants the user the permissions necessary to run Winlogbeat and read event 
 
 ![Screenshot 2025-05-14 163129](https://github.com/user-attachments/assets/fe612239-4351-47d4-a688-45c68f21fb95)
 
+![Screenshot 2025-05-14 163831](https://github.com/user-attachments/assets/cb31efad-6d5c-4c3d-a4cf-3023a9e87ed0)
 
+# Alright, I chose to disable SSL certificate verification. This is just a testing environment—but to be clear, this should **not** be done in a real setup.
+```
+ #ssl.certificate_authorities: [...]
+This line is commented out (disabled) using #.
+
+If enabled, it would tell Winlogbeat to verify the SSL certificate of the Elasticsearch server using the provided .crt file path.
+
+Since it's commented, Winlogbeat is not verifying the server certificate.
+
+ ssl.verification_mode: none
+This means SSL certificate verification is turned off, so Winlogbeat will connect to the server even if the SSL certificate is untrusted or self-signed.
+
+ Security Risk: This is unsafe for production environments. It's only acceptable for local testing or development setups.
+```
+![Screenshot 2025-05-15 055724](https://github.com/user-attachments/assets/1036f5c0-3efb-41a5-962b-b0aac0b683dd)
