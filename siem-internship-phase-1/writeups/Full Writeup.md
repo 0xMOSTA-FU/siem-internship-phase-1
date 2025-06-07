@@ -2409,3 +2409,10 @@ and add this:
 ![Screenshot 2025-05-18 032654](https://github.com/user-attachments/assets/49a4ddcf-a7d3-48c7-9b86-064ac1f700d4)
 
 ![Screenshot 2025-05-18 074350](https://github.com/user-attachments/assets/018c5aaf-75ae-4d71-8d2c-cd0a16737fd9)
+
+
+```md
+# Alright, it’s time for the final touches.
+# Take a good look at the following diagram,
+# then let’s get started.
+```
