@@ -8,7 +8,12 @@ Let’s get started.
 > As a result, the IP address **changed every time** I shut down and restarted the system.  
 > The only thing I updated was the IP **inside Winlogbeat** to match the new one each time.
 > like that :
-> 
+
+```
+This is a local testing environment, so you’ll notice I’m a bit relaxed or implementing final ideas without following best practices, and I’m walking you through everything step by step.
+But keep in mind—these things aren’t standard, so **don’t do them in a real production environment.**
+```
+
 ![Screenshot 2025-05-13 003558](https://github.com/user-attachments/assets/34e1030d-80fd-4573-99ce-b8d9f361dcde)
 ![Screenshot 2025-05-14 162428](https://github.com/user-attachments/assets/e55b6fcb-18e7-4fee-9190-f6061c75a877)
 ![Screenshot 2025-05-15 053846](https://github.com/user-attachments/assets/58fdb6fd-c27e-4e1d-8964-d76a362e4c29)
@@ -2158,3 +2163,8 @@ This means SSL certificate verification is turned off, so Winlogbeat will connec
  Security Risk: This is unsafe for production environments. It's only acceptable for local testing or development setups.
 ```
 ![Screenshot 2025-05-15 055724](https://github.com/user-attachments/assets/1036f5c0-3efb-41a5-962b-b0aac0b683dd)
+
+```
+This is a local testing environment, so you’ll notice I’m a bit relaxed or implementing final ideas without following best practices, and I’m walking you through everything step by step.
+But keep in mind—these things aren’t standard, so **don’t do them in a real production environment.**
+```
