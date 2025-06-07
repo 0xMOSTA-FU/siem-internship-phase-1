@@ -2743,3 +2743,7 @@ Each Sysmon event type corresponds to a specific system activity. These are the 
 ![Screenshot 2025-06-05 121504](https://github.com/user-attachments/assets/ece40a7d-db3c-40f4-88a1-6335504e081c)
 
 ![Screenshot 2025-06-05 121529](https://github.com/user-attachments/assets/fe448276-ce9a-454e-9d66-6066dbc52d44)
+
+> ## Now it’s time for the final touches.
+> ## We’ll configure the `config.xml` file for Sysmon and apply another set of rules for different attacks.
+> ## We’ll document them here—and with that, our lab will be complete.
