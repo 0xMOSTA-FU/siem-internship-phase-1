@@ -1,0 +1,43 @@
+<Sysmon schemaversion="4.70">
+  <HashAlgorithms>sha256</HashAlgorithms>
+  <EventFiltering>
+
+    <ProcessCreate onmatch="include">
+      <CommandLine condition="contains">Invoke-WebRequest</CommandLine>
+      <CommandLine condition="contains">curl</CommandLine>
+      <CommandLine condition="contains">powershell</CommandLine>
+      <CommandLine condition="contains">ftp</CommandLine>
+      <CommandLine condition="contains">nc</CommandLine>
+    </ProcessCreate>
+
+    <RegistryEvent onmatch="include">
+      <TargetObject condition="contains">\\Run</TargetObject>
+      <TargetObject condition="contains">\\RunOnce</TargetObject>
+    </RegistryEvent>
+
+    <FileCreateTime onmatch="include">
+      <Image condition="contains">powershell.exe</Image>
+    </FileCreateTime>
+
+    <FileCreate onmatch="include">
+      <TargetFilename condition="contains">.exe</TargetFilename>
+      <TargetFilename condition="contains">.bat</TargetFilename>
+      <TargetFilename condition="contains">.vbs</TargetFilename>
+    </FileCreate>
+
+    <NetworkConnect onmatch="include">
+      <Image condition="contains">powershell.exe</Image>
+      <Image condition="contains">curl.exe</Image>
+      <Image condition="contains">nc.exe</Image>
+    </NetworkConnect>
+
+    <DriverLoad onmatch="exclude">
+      <Signature condition="contains">Microsoft Windows</Signature>
+    </DriverLoad>
+
+    <ImageLoad onmatch="exclude">
+      <ImageLoaded condition="end with">.dll</ImageLoaded>
+    </ImageLoad>
+
+  </EventFiltering>
+</Sysmon>
