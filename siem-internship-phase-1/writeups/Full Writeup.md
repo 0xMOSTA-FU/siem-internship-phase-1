@@ -2851,3 +2851,12 @@ The attacks we’ll be simulating and configuring settings for are:
 
 ## You can view the full content of the `sysmonconfig.xml` file here:
 ## [SysmonConfig.xml](https://github.com/0xMOSTA-FU/siem-internship-phase-1/blob/main/siem-internship-phase-1/writeups/configs/sysmon-config.xml)
+
+How do we find out the Sysmon `schemaversion`?
+By using the Next command:
+```bash
+sysmon -s
+```
+![image](https://github.com/user-attachments/assets/7621ce63-746f-4cc9-9e52-6c891e93ba22)
+
+
