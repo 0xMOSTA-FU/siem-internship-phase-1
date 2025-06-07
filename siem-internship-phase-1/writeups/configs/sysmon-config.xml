@@ -1,4 +1,4 @@
-<Sysmon schemaversion="4.70">
+<Sysmon schemaversion="4.90">
   <HashAlgorithms>sha256</HashAlgorithms>
   <EventFiltering>
 
