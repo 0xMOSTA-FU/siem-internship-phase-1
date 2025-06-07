@@ -2720,5 +2720,26 @@ Each Sysmon event type corresponds to a specific system activity. These are the 
 * **Event ID 25** is important for catching stealth techniques like process hollowing (used by advanced threats).
 
 ---
+![Screenshot 2025-06-05 120517](https://github.com/user-attachments/assets/1b2915e5-fd4b-4b0b-8f2a-8083a8a46100)
 
+![Screenshot 2025-06-05 120541](https://github.com/user-attachments/assets/325c8658-f5a4-47f4-95c6-e4042726cf9b)
 
+![Screenshot 2025-06-05 120604](https://github.com/user-attachments/assets/50b8399d-553b-4770-8fcf-29d823c2c327)
+
+![Screenshot 2025-06-05 120610](https://github.com/user-attachments/assets/97aed086-a9ec-487e-a2fa-a80c5f9bd406)
+
+![Screenshot 2025-06-05 120617](https://github.com/user-attachments/assets/aab96f9f-dec4-4e15-81d1-ee42655b2b92)
+
+![Screenshot 2025-06-05 120745](https://github.com/user-attachments/assets/b56b2cb6-99df-4631-8726-8b613d918518)
+
+![Screenshot 2025-06-05 120955](https://github.com/user-attachments/assets/5f99a609-7f45-4be6-8d37-0306871b5a5e)
+
+![Screenshot 2025-06-05 121423](https://github.com/user-attachments/assets/e841ddf0-2d65-445b-861a-af9fd2764c70)
+
+![Screenshot 2025-06-05 121432](https://github.com/user-attachments/assets/7f6b6f48-40d6-45ea-b1c4-3321c46adeff)
+
+![Screenshot 2025-06-05 121458](https://github.com/user-attachments/assets/467b9354-e11e-477a-86bb-4a6a01736edf)
+
+![Screenshot 2025-06-05 121504](https://github.com/user-attachments/assets/ece40a7d-db3c-40f4-88a1-6335504e081c)
+
+![Screenshot 2025-06-05 121529](https://github.com/user-attachments/assets/fe448276-ce9a-454e-9d66-6066dbc52d44)
