@@ -44,27 +44,27 @@ Future Work:
 ```yaml
 ### Detection Logic: Simulated Malware Execution
 
-**Detection Criteria**:
+Detection Criteria:
 - Event ID: 1 (ProcessCreate)
 - ParentImage: powershell.exe
 - Target Image: calc.exe
 - CommandLine contains suspicious flags: `-NoP`, `-W Hidden`
 - Registry modification under `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
 
-**Log Source**:
+Log Source:
 - `winlogbeat-*`
 - Event IDs: 1 (ProcessCreate), 13 (Registry modification)
 
-**MITRE ATT&CK**:
+MITRE ATT&CK:
 - Tactic: Execution (TA0002)
 - Technique: Command and Scripting Interpreter (T1059.001)
 - Technique: Boot or Logon Autostart Execution: Registry Run Keys (T1547.001)
 
-**Risk Level**:
+Risk Level:
 - Severity: Medium
 - Risk Score: 55
 
-**Suppression Logic**:
+Suppression Logic:
 - Suppress based on `process.name` if identical command seen in last 5 mins
 ```
 
@@ -81,25 +81,25 @@ Future Work:
 ```yaml
 ### Detection Logic: Simulated Data Exfiltration
 
-**Detection Criteria**:
+Detection Criteria:
 - Event ID: 3 (NetworkConnect)
 - Image: powershell.exe
 - CommandLine contains `Invoke-WebRequest`
 - Target address: `127.0.0.1` (local test, replace in production)
 
-**Log Source**:
+Log Source:
 - `winlogbeat-*`
 - Event IDs: 3 (NetworkConnect), 11 (FileCreate)
 
-**MITRE ATT&CK**:
+MITRE ATT&CK:
 - Tactic: Exfiltration (TA0010)
 - Technique: Exfiltration Over HTTP (T1041)
 
-**Risk Level**:
+Risk Level:
 - Severity: Medium
 - Risk Score: 60
 
-**Suppression Logic**:
+Suppression Logic:
 - Suppress repeated identical requests from same process & IP in 10 mins
 ```
 
@@ -116,24 +116,24 @@ Future Work:
 ```yaml
 ### Detection Logic: Port Scanning Attempt
 
-**Detection Criteria**:
+Detection Criteria:
 - Multiple inbound connections from same IP
 - Ports scanned include 22, 80, 139, 445
 - Event source: firewall logs (optional), or endpoint detection (Winlogbeat, Suricata)
 
-**Log Source**:
+Log Source:
 - `packetbeat-*`, `winlogbeat-*`, or IDS logs
 - Event IDs: varies depending on sensor
 
-**MITRE ATT&CK**:
+MITRE ATT&CK:
 - Tactic: Discovery (TA0007)
 - Technique: Network Service Scanning (T1046)
 
-**Risk Level**:
+Risk Level:
 - Severity: Medium
 - Risk Score: 65
 
-**Suppression Logic**:
+Suppression Logic:
 - Suppress if same IP triggered alert in last 10 mins
 ```
 
@@ -150,25 +150,25 @@ Future Work:
 ```yaml
 ### Detection Logic: Phishing Macro Simulation
 
-**Detection Criteria**:
+Detection Criteria:
 - ParentImage: winword.exe or excel.exe
 - Child process: powershell.exe
 - CommandLine contains suspicious flags or sleep/delay
 
-**Log Source**:
+Log Source:
 - `winlogbeat-*`
 - Event ID: 1 (ProcessCreate)
 
-**MITRE ATT&CK**:
+MITRE ATT&CK:
 - Tactic: Initial Access (TA0001)
 - Technique: Spearphishing Attachment (T1566.001)
 - Sub-Technique: Malicious Macro (T1059.005)
 
-**Risk Level**:
+Risk Level:
 - Severity: High
 - Risk Score: 80
 
-**Suppression Logic**:
+Suppression Logic:
 - Suppress same parent-child combo (Office -> PowerShell) if seen in last 10 mins
 ```
 
@@ -185,27 +185,27 @@ Future Work:
 ```yaml
 ### Detection Logic: Persistence and Reconnaissance Simulation
 
-**Detection Criteria**:
+Detection Criteria:
 - PowerShell running `Get-WmiObject`, `netstat`, or `schtasks`
 - Event ID: 1 (ProcessCreate)
 - File write detected: netstat_output.txt
 - Event ID: 11 (FileCreate)
 
-**Log Source**:
+Log Source:
 - `winlogbeat-*`
 
-**MITRE ATT&CK**:
+MITRE ATT&CK:
 - Tactic: Persistence (TA0003), Discovery (TA0007)
 - Techniques:
   - T1057: Process Discovery (via WMI)
   - T1053: Scheduled Task
   - T1049: System Network Connections Discovery
 
-**Risk Level**:
+Risk Level:
 - Severity: Medium-High
 - Risk Score: 68
 
-**Suppression Logic**:
+Suppression Logic:
 - Suppress by process + commandline hash if repeated in short time
 ```
 
