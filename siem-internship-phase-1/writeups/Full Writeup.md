@@ -2129,3 +2129,16 @@ This grants the user the permissions necessary to run Winlogbeat and read event 
 
 ![Screenshot 2025-05-14 153758](https://github.com/user-attachments/assets/aedecf16-b949-4fef-9157-713b526cdd77)
 
+## Alright, if you need to transfer the certification, you can use drag and drop, or you can transfer it by setting up a local web server as shown below.
+
+![Screenshot 2025-05-14 162428](https://github.com/user-attachments/assets/7e40171e-2318-43f4-a3b7-f8fc1e8ec10b)
+
+![Screenshot 2025-05-14 162635](https://github.com/user-attachments/assets/cf6c6dc5-994f-45fe-9d77-99d069460f5a)
+
+![Screenshot 2025-05-14 162656](https://github.com/user-attachments/assets/1e261c00-e0bb-459a-891a-63e5a1dabd46)
+
+![Screenshot 2025-05-14 163007](https://github.com/user-attachments/assets/18ae9312-a1ed-4194-8b81-a898a3089510)
+
+![Screenshot 2025-05-14 163129](https://github.com/user-attachments/assets/fe612239-4351-47d4-a688-45c68f21fb95)
+
+
