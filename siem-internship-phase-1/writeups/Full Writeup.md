@@ -2108,3 +2108,14 @@ This grants the user the permissions necessary to run Winlogbeat and read event 
 # [Don’t forget to check the official documentation for more information.](https://www.elastic.co/docs/reference/beats/winlogbeat/winlogbeat-installation-configuration)
 
 ------
+
+>  **Important Note**
+> 
+> Throughout this lab, my environment experienced **frequent IP changes**, which caused instability and led to the use of **different IP addresses** across various sections.
+> 
+>  Recently, the IPs have stabilized within the following range:
+> `192.168.1.x/24`
+> 
+> As a result, you may notice multiple IPs referenced during the lab exercises.  
+> I also **modified the Winlogbeat and ELK Stack configurations** several times to adapt to the ongoing IP changes and maintain proper functionality.
+
