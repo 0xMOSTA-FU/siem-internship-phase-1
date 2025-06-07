@@ -2879,4 +2879,8 @@ sysmon -s
 
 ![image](https://github.com/user-attachments/assets/36ba2b63-cba4-48b0-b1d7-18eeb8d65523)
 
+## IP of Windows10 Machine(Target) : 
+
+![image](https://github.com/user-attachments/assets/0cf4e322-0b52-4fac-861a-acc6c3c490c7)
+
 
