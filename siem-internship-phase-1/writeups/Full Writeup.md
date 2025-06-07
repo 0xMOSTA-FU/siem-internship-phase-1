@@ -2564,3 +2564,34 @@ This is a **Timeline** tool, used to investigate events related to alerts. I’v
 > ## [Rules Section](https://github.com/0xMOSTA-FU/siem-internship-phase-1/tree/main/siem-internship-phase-1/writeups/rules)
 
 ------------
+![Screenshot 2025-05-22 082019](https://github.com/user-attachments/assets/6acfbdc9-10ef-40ba-a341-f8d80f53ab18)
+
+![Screenshot 2025-05-22 082305](https://github.com/user-attachments/assets/43b49ba6-bdd4-45fd-a3cd-73aef04934cb)
+
+![Screenshot 2025-05-31 073634](https://github.com/user-attachments/assets/a9ed9caf-2555-4590-abf3-3c431e852963)
+
+![Screenshot 2025-05-31 073823](https://github.com/user-attachments/assets/0dc06622-7e1b-4984-a9bd-c1c4ca69eb9f)
+
+![Screenshot 2025-05-31 100022](https://github.com/user-attachments/assets/85d8d56e-d533-4fed-b5b7-5058d429932d)
+
+![Screenshot 2025-05-31 100122](https://github.com/user-attachments/assets/888ee031-38a0-4ad2-9cbd-efe25581bbbb)
+
+![Screenshot 2025-05-31 124014](https://github.com/user-attachments/assets/34f4b46f-4373-4401-ad27-ab90ada89c8b)
+
+![Screenshot 2025-05-31 124956](https://github.com/user-attachments/assets/f920002b-49f8-43a3-a64a-791976437381)
+
+![Screenshot 2025-05-31 125014](https://github.com/user-attachments/assets/86e8cded-634a-4aa2-813d-c102b6bed8fe)
+
+![Screenshot 2025-05-31 125041](https://github.com/user-attachments/assets/351ff8b4-7d37-4af3-8d62-66fc0d64018a)
+
+![Screenshot 2025-05-31 125145](https://github.com/user-attachments/assets/94692d9f-3729-41cc-a028-456d782b9fa7)
+
+![Screenshot 2025-05-31 141726](https://github.com/user-attachments/assets/d9378e3e-c6e7-4172-92a4-a3249ee53961)
+
+![Screenshot 2025-05-31 142022](https://github.com/user-attachments/assets/2bbd4350-4ad4-4d57-80b1-6ebe371397c0)
+
+![Screenshot 2025-05-31 141044](https://github.com/user-attachments/assets/5f06627f-19cd-485c-b4ab-bb5e879e1617)
+
+## #This was a test for a Brute Force attack.
+#Let’s explore the rest of the possible scenarios in the upcoming sections,
+#and as always, you’ll find the detailed breakdown for each part in the rest of the repo.
