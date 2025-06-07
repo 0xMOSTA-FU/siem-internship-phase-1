@@ -2119,3 +2119,13 @@ This grants the user the permissions necessary to run Winlogbeat and read event 
 > As a result, you may notice multiple IPs referenced during the lab exercises.  
 > I also **modified the Winlogbeat and ELK Stack configurations** several times to adapt to the ongoing IP changes and maintain proper functionality.
 
+![Screenshot 2025-05-14 152307](https://github.com/user-attachments/assets/42be40f2-8451-4c26-8006-a584a9be357a)
+
+![Screenshot 2025-05-14 153312](https://github.com/user-attachments/assets/52d2e4a5-763b-4bdd-a07f-22956e9e5f4b)
+
+![Screenshot 2025-05-14 153601](https://github.com/user-attachments/assets/33c6991c-fa11-4dd0-a945-01bcd0a6b40c)
+
+![Screenshot 2025-05-14 153620](https://github.com/user-attachments/assets/a6b6c8fe-3f16-4f9f-8100-c0203b598ddc)
+
+![Screenshot 2025-05-14 153758](https://github.com/user-attachments/assets/aedecf16-b949-4fef-9157-713b526cdd77)
+
