@@ -2168,3 +2168,58 @@ This means SSL certificate verification is turned off, so Winlogbeat will connec
 This is a local testing environment, so you’ll notice I’m a bit relaxed or implementing final ideas without following best practices, and I’m walking you through everything step by step.
 But keep in mind—these things aren’t standard, so **don’t do them in a real production environment.**
 ```
+
+# Now we’ll start by creating the index, sending the logs, and viewing the results in Kibana.
+
+![Screenshot 2025-05-15 061741](https://github.com/user-attachments/assets/5eee2115-8f5c-491a-92fd-808c32a938c4)
+
+![Screenshot 2025-05-15 061801](https://github.com/user-attachments/assets/514d9e80-826c-4e17-ac53-57d71049fd63)
+
+### Create Data View
+
+---
+###  Step-by-Step Instructions:
+
+1. **Open Kibana**
+   Go to Kibana in your browser (usually something like: `http://localhost:5601` or your server address).
+
+2. From the **left sidebar**:
+   Click on **"Management"**.
+   In newer versions, it might be listed as **"Stack Management"**.
+
+3. Inside the Management section:
+   Click on **"Data Views"**.
+   In older versions of Kibana, it might be labeled as **"Index Patterns"**.
+
+4. On the Data Views page:
+
+   * Click **"Create data view"** (or “Create index pattern” if it's an older version).
+
+5. On the creation form:
+
+   * **Data view name**: Enter a name for the view (this is what you’ll see inside Kibana).
+   * **Index pattern**: Type the name of your index or a wildcard pattern (e.g., `logs-*`, `myindex-*`).
+   * If the index exists, it will show a message like: “Your data view matches X indices.”
+
+6. (Optional) If your index contains a timestamp field (like `@timestamp`):
+
+   * Select it in the **"Timestamp field"** dropdown to enable time-based filtering.
+
+7. Finally:
+
+   * Click **"Create data view"**.
+
+---
+
+###  Now you can use this Data View in:
+
+* **Discover** (to explore raw data)
+* **Visualizations / Dashboards**
+* **Lens, Alerts, and more**
+
+---
+
+
+![Screenshot 2025-05-15 061831](https://github.com/user-attachments/assets/1a0e228e-d263-456a-8d10-a3ce40a3c39d)
+
+![Screenshot 2025-05-15 061838](https://github.com/user-attachments/assets/75ceedd3-8251-45e5-aec6-e54649c9ff06)
