@@ -2418,4 +2418,6 @@ and add this:
 ```
 ![Screenshot 2025-05-20 111801](https://github.com/user-attachments/assets/dd91979c-422f-4a28-b9cb-143b19fe873c)
 
+### Take a good look at the upcoming image—it’s important that we understand everything in it. Let’s quickly talk about what’s shown in the image.
 
+![Screenshot 2025-06-07 203007](https://github.com/user-attachments/assets/3504a357-9a5b-40d0-8b0b-2066105423fc)
