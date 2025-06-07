@@ -2238,3 +2238,5 @@ But keep in mind—these things aren’t standard, so **don’t do them in a rea
 
 ![Screenshot 2025-05-15 063856](https://github.com/user-attachments/assets/ca608472-c28f-4641-bee2-72564674baa8)
 
+# Let's go ahead and configure some rules.
+
