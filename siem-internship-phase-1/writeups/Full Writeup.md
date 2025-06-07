@@ -2240,3 +2240,7 @@ But keep in mind—these things aren’t standard, so **don’t do them in a rea
 
 # Let's go ahead and configure some rules.
 
+> You can visit the other sections of the repo, where you’ll find details of all the rules, as well as some final notes and summaries explaining certain parts.
+>
+> Also, keep following along here—there are some important details coming up.
+
