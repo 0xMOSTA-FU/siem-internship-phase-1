@@ -2846,4 +2846,8 @@ The attacks we’ll be simulating and configuring settings for are:
 * **Data Exfiltration Simulation**
 * **Port Scanning Simulation**
 * **Phishing Simulation**
+  
+![image](https://github.com/user-attachments/assets/8e5aa60a-35c7-47e3-a61b-947d836413e6)
 
+## You can view the full content of the `sysmonconfig.xml` file here:
+## [SysmonConfig.xml](https://github.com/0xMOSTA-FU/siem-internship-phase-1/blob/main/siem-internship-phase-1/writeups/configs/sysmon-config.xml)
