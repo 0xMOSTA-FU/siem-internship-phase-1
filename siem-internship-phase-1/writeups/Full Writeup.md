@@ -2556,6 +2556,10 @@ This is a **Timeline** tool, used to investigate events related to alerts. I’v
 * Export or replicate rules across environments.
 * Launch investigations with one click using Timelines.
 
----
+--------
+--------
+> Now I’ll include the images that show our testing of the rule.
+> If you want more explanation and details, go to the **rules** section in this repo—
+> you’ll find detailed explanations of the rules, their testing, the logic behind them, the data, and the logs as well.
 
-
+------------
