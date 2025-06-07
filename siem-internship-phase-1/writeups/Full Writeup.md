@@ -2223,3 +2223,18 @@ But keep in mind—these things aren’t standard, so **don’t do them in a rea
 ![Screenshot 2025-05-15 061831](https://github.com/user-attachments/assets/1a0e228e-d263-456a-8d10-a3ce40a3c39d)
 
 ![Screenshot 2025-05-15 061838](https://github.com/user-attachments/assets/75ceedd3-8251-45e5-aec6-e54649c9ff06)
+
+![Screenshot 2025-05-15 061947](https://github.com/user-attachments/assets/ad88d686-45e6-43bc-8a9a-ebb3b2d32768)
+
+![Screenshot 2025-05-15 061952](https://github.com/user-attachments/assets/b67b38b1-d68e-4491-82f6-582f25ce2d99)
+
+![Screenshot 2025-05-15 062614](https://github.com/user-attachments/assets/abcd81c7-f6b0-42c3-8230-626f72696e50)
+
+![Screenshot 2025-05-15 062627](https://github.com/user-attachments/assets/6787581e-c132-48a7-aae2-43dcbb319b22)
+
+![Screenshot 2025-05-15 062733](https://github.com/user-attachments/assets/4ea48505-2b16-4bf3-8166-e1df3930537c)
+
+![Screenshot 2025-05-15 063102](https://github.com/user-attachments/assets/4d37cc27-c3a8-4838-9663-a1ecb2dddf03)
+
+![Screenshot 2025-05-15 063856](https://github.com/user-attachments/assets/ca608472-c28f-4641-bee2-72564674baa8)
+
