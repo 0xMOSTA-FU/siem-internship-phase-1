@@ -2592,6 +2592,133 @@ This is a **Timeline** tool, used to investigate events related to alerts. I’v
 
 ![Screenshot 2025-05-31 141044](https://github.com/user-attachments/assets/5f06627f-19cd-485c-b4ab-bb5e879e1617)
 
-## #This was a test for a Brute Force attack.
-#Let’s explore the rest of the possible scenarios in the upcoming sections,
-#and as always, you’ll find the detailed breakdown for each part in the rest of the repo.
+## This was a test for a Brute Force attack.
+## Let’s explore the rest of the possible scenarios in the upcoming sections,
+## and as always, you’ll find the detailed breakdown for each part in the rest of the repo.
+
+# Sysmon:
+
+----
+### We’ve already covered an explanation of Sysmon earlier.
+### Now, we’ll proceed to download it and quickly review what it is.
+### You can also visit the official documentation—and all the download links are provided here as well.
+
+---
+
+## **Sysmon v15.15 – System Monitor Overview**
+
+**Download:**
+# [Official Documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+* \[Sysmon for Windows (4.6 MB)](https://download.sysinternals.com/files/Sysmon.zip)
+* \[Sysmon for Linux (GitHub)](https://github.com/Sysinternals/SysmonForLinux)
+
+---
+
+### **Introduction**
+
+System Monitor (Sysmon) is a Windows system service and kernel driver that logs detailed system activity to the Windows Event Log. Once installed, it remains active across reboots, monitoring process creation, network activity, and file timestamp changes. When paired with SIEM tools or Windows Event Collection, Sysmon can help detect suspicious behavior and provide insights into attacker techniques. It runs as a protected process to limit user-mode interference.
+
+>  Sysmon does **not** analyze or conceal its events—it only logs activity.
+
+---
+
+### **Key Capabilities**
+
+* Tracks process creations with full command lines (for both parent and child processes).
+* Logs image file hashes (SHA1 by default, with options for MD5, SHA256, and IMPHASH).
+* Assigns GUIDs to processes and sessions to assist in event correlation.
+* Logs driver and DLL loads, including signature and hash info.
+* Monitors raw disk access attempts.
+* Optionally logs network connections (source process, IPs, ports, and hostnames).
+* Detects file creation timestamp modifications (common malware evasion tactic).
+* Automatically reloads config on registry changes.
+* Offers event filtering rules (include/exclude).
+* Captures events from early boot (including kernel-mode malware activity).
+
+---
+
+### **Installation & Usage (Command-line)**
+
+| Command       | Description                              |
+| ------------- | ---------------------------------------- |
+| `-i <config>` | Install Sysmon with optional config file |
+| `-c <config>` | Update or display current configuration  |
+| `-m`          | Install event manifest                   |
+| `-s`          | Show schema definition                   |
+| `-u [force]`  | Uninstall service and driver             |
+
+> Add `-accepteula` to accept the EULA silently.
+
+Events are logged immediately. The driver loads early in the boot process to capture initial activity.
+
+### **Log Locations:**
+
+* **Windows Vista and later:** `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`
+* **Older systems:** Stored in the **System Event Log**
+
+---
+
+### **Examples**
+
+* **Install (default config):**
+  `sysmon -accepteula -i`
+
+* **Install with config file:**
+  `sysmon -accepteula -i c:\windows\config.xml`
+
+* **Update config:**
+  `sysmon -c c:\windows\config.xml`
+
+* **View config:**
+  `sysmon -c`
+
+* **Uninstall:**
+  `sysmon -u`
+
+* **Show schema:**
+  `sysmon -s`
+
+---
+
+### **Event Types**
+
+Each Sysmon event type corresponds to a specific system activity. These are the main ones:
+
+| **Event ID** | **Description**                                                 |
+| ------------ | --------------------------------------------------------------- |
+| **1**        | Process creation                                                |
+| **2**        | File creation timestamp changed                                 |
+| **3**        | Network connection (TCP/UDP)                                    |
+| **4**        | Sysmon service state change                                     |
+| **5**        | Process termination                                             |
+| **6**        | Driver loaded                                                   |
+| **7**        | Image (DLL/module) loaded                                       |
+| **8**        | Remote thread creation (used for code injection)                |
+| **9**        | Raw disk read (\\.\ access)                                     |
+| **10**       | Process accessing another process (e.g., LSASS memory scraping) |
+| **11**       | File creation/overwrite                                         |
+| **12-14**    | Registry events (create, delete, modify, rename)                |
+| **15**       | File stream hash (alternate data streams)                       |
+| **16**       | Configuration change                                            |
+| **17-18**    | Named pipe creation/connection                                  |
+| **19-21**    | WMI activity (filter/consumer/binding detection)                |
+| **22**       | DNS queries by processes                                        |
+| **23**       | File deletion (archived copy)                                   |
+| **24**       | Clipboard content change                                        |
+| **25**       | Process tampering detected (e.g., process hollowing)            |
+| **26**       | File deletion detected (without archiving)                      |
+| **27**       | Executable file creation blocked                                |
+
+---
+
+###  **Clarification and Additional Notes**
+
+* **ProcessGUID** and **SessionGUID** help correlate related events even when process IDs are reused.
+* **Hash logging** is valuable for identifying known malicious files.
+* **FileCreateStreamHash** is especially useful for detecting "Mark of the Web" alternate data streams (used by some malware downloaded from browsers).
+* **WMI Events (19–21)** help detect stealthy malware persistence mechanisms.
+* **Event ID 25** is important for catching stealth techniques like process hollowing (used by advanced threats).
+
+---
+
+
