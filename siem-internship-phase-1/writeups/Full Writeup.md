@@ -2838,4 +2838,12 @@ You should see Sysmon event logs there.
 
 ---
 
+As we fine-tune the `config.xml` for Sysmon, we’ll also need to adjust our detection rules. We’ll create a few scripts to test these rules, so let’s get started!
+
+The attacks we’ll be simulating and configuring settings for are:
+
+* **Malware Execution Simulation**
+* **Data Exfiltration Simulation**
+* **Port Scanning Simulation**
+* **Phishing Simulation**
 
