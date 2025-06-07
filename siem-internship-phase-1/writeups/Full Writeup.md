@@ -2859,4 +2859,12 @@ sysmon -s
 ```
 ![image](https://github.com/user-attachments/assets/7621ce63-746f-4cc9-9e52-6c891e93ba22)
 
+![image](https://github.com/user-attachments/assets/535550e4-29bd-4bca-bdc5-87002e1f32d2)
 
+![image](https://github.com/user-attachments/assets/28a116ee-f994-4c08-99fc-60b3ad9b38a4)
+
+![image](https://github.com/user-attachments/assets/fde8ed0a-1f88-4475-8916-acd64ef380b2)
+
+![image](https://github.com/user-attachments/assets/4b5fa8f5-6fe8-4a7c-a16a-4325bbb61579)
+
+![image](https://github.com/user-attachments/assets/972bb03a-63a0-46c4-8594-d75b258ec4f2)
