@@ -2868,3 +2868,7 @@ sysmon -s
 ![image](https://github.com/user-attachments/assets/4b5fa8f5-6fe8-4a7c-a16a-4325bbb61579)
 
 ![image](https://github.com/user-attachments/assets/972bb03a-63a0-46c4-8594-d75b258ec4f2)
+
+![image](https://github.com/user-attachments/assets/fa15e4bc-1f7e-424b-97d3-4ba36f2ab8ad)
+
+![image](https://github.com/user-attachments/assets/ba6425f9-9203-41aa-ad05-765d28e6cb1b)
