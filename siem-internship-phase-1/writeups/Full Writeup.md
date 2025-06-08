@@ -2883,4 +2883,12 @@ sysmon -s
 
 ![image](https://github.com/user-attachments/assets/0cf4e322-0b52-4fac-861a-acc6c3c490c7)
 
+# New IP : 
+![image](https://github.com/user-attachments/assets/b3f029e1-8613-4f25-9bd4-006be12dfbe8)
 
+Scan Target Machine With Zenmap:
+![image](https://github.com/user-attachments/assets/2f07d348-1f4e-4a11-9173-3a4bcb671a27)
+
+![image](https://github.com/user-attachments/assets/058e9f87-5158-42ea-8111-6f281f4de38d)
+
+![image](https://github.com/user-attachments/assets/0cab4106-5e16-4016-93ff-e44f91fb454e)
