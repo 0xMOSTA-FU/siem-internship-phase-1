@@ -2892,3 +2892,9 @@ Scan Target Machine With Zenmap:
 ![image](https://github.com/user-attachments/assets/058e9f87-5158-42ea-8111-6f281f4de38d)
 
 ![image](https://github.com/user-attachments/assets/0cab4106-5e16-4016-93ff-e44f91fb454e)
+
+![image](https://github.com/user-attachments/assets/916915f7-114f-48bd-a304-cd947e057d4b)
+
+![image](https://github.com/user-attachments/assets/d1d2b42f-cff6-4317-aa8a-8c6919e6451e)
+
+![image](https://github.com/user-attachments/assets/45b591df-3099-44a7-b94e-f1ea4a9f9bb5)
