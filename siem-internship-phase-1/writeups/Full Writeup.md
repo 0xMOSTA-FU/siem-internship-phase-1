@@ -2846,6 +2846,7 @@ The attacks we’ll be simulating and configuring settings for are:
 * **Data Exfiltration Simulation**
 * **Port Scanning Simulation**
 * **Phishing Simulation**
+* **Suspicious Persistence & Recon Simulation**
   
 ![image](https://github.com/user-attachments/assets/8e5aa60a-35c7-47e3-a61b-947d836413e6)
 
