@@ -2,7 +2,7 @@
  # Phase 1 – Introduction
 
 Welcome to the internship and SOC lab learning journey.
-
+[Full Write-up](https://github.com/0xMOSTA-FU/siem-internship-phase-1/blob/main/siem-internship-phase-1/writeups/Full%20Writeup.md)
 ## Objectives of Phase 1:
 - Setup a mini SOC lab using free and open-source tools.
 - Simulate basic attacks (e.g., brute-force, malware).
