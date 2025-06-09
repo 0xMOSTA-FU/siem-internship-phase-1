@@ -2898,3 +2898,63 @@ Scan Target Machine With Zenmap:
 ![image](https://github.com/user-attachments/assets/d1d2b42f-cff6-4317-aa8a-8c6919e6451e)
 
 ![image](https://github.com/user-attachments/assets/45b591df-3099-44a7-b94e-f1ea4a9f9bb5)
+
+
+# Phishing Simulation : 
+
+![Screenshot 2025-06-09 142234](https://github.com/user-attachments/assets/b1a77548-cdb4-4dbc-9312-86053c6f05a2)
+
+![Screenshot 2025-06-09 142312](https://github.com/user-attachments/assets/dac7ab3f-3922-4438-9f9d-ee1313c3bf9d)
+
+![Screenshot 2025-06-09 142736](https://github.com/user-attachments/assets/762a17d5-685d-4d1a-aaaa-b2eadc9424c5)
+
+![Screenshot 2025-06-09 142827](https://github.com/user-attachments/assets/540b18a9-f485-484c-af41-fefb8cdfe187)
+
+![Screenshot 2025-06-09 143314](https://github.com/user-attachments/assets/58d4e85f-044d-42f3-9185-9c433de9b7df)
+
+![Screenshot 2025-06-09 143404](https://github.com/user-attachments/assets/484a9cd8-015b-4b12-bf5f-a919346c0123)
+
+![Screenshot 2025-06-09 150134](https://github.com/user-attachments/assets/70811f8b-c340-4ac7-8a32-0ce293939c8f)
+
+![Screenshot 2025-06-09 150320](https://github.com/user-attachments/assets/d6669404-995a-42b6-9946-ebd30003b4c7)
+
+![Screenshot 2025-06-09 150325](https://github.com/user-attachments/assets/1dd013a5-0e66-4a80-b43b-7ee36c2bcddb)
+
+![Screenshot 2025-06-09 151035](https://github.com/user-attachments/assets/c723e9cc-8246-4f45-a4fb-7f01b55bb322)
+
+# Recon Simulation : 
+
+![Screenshot 2025-06-09 143643](https://github.com/user-attachments/assets/b3eff5d7-9a95-4756-ae5f-138f9a7d8eb0)
+
+![Screenshot 2025-06-09 143658](https://github.com/user-attachments/assets/b27f4587-44da-46c6-8fde-564a4aabe7d9)
+
+![Screenshot 2025-06-09 143705](https://github.com/user-attachments/assets/8c5bd861-4d21-4a5d-adc4-b7e62a5cf4c4)
+
+![Screenshot 2025-06-09 143721](https://github.com/user-attachments/assets/ea637a81-7a78-44be-97c1-d488d19af50f)
+
+![Screenshot 2025-06-09 143800](https://github.com/user-attachments/assets/9b961a74-bc59-40d2-8fc2-78080eb97e14)
+
+![Screenshot 2025-06-09 143818](https://github.com/user-attachments/assets/42a171ff-510a-4381-9430-d7ba5acc45d5)
+
+![Screenshot 2025-06-09 143859](https://github.com/user-attachments/assets/2d87e9a5-b21c-4a5c-a491-2ed2a9bb899e)
+
+![Screenshot 2025-06-09 143923](https://github.com/user-attachments/assets/af1a37d3-4f6f-45fa-973f-d1adb8fbeb8f)
+
+![Screenshot 2025-06-09 143942](https://github.com/user-attachments/assets/ccf108ce-a808-4390-bbb4-e54d2ee37ff3)
+
+![Screenshot 2025-06-09 144020](https://github.com/user-attachments/assets/966f0288-0ccc-44db-837d-ffa481c06b52)
+
+![Screenshot 2025-06-09 144048](https://github.com/user-attachments/assets/5fc98cde-72c2-44c9-ae38-080a4c7171a6)
+
+
+![Screenshot 2025-06-09 164318](https://github.com/user-attachments/assets/2765e986-cf79-46ab-bb12-430727ad0c10)
+
+![Screenshot 2025-06-10 031424](https://github.com/user-attachments/assets/ba1405da-5a89-40d5-a789-e1ab74b1a2ba)
+
+![Screenshot 2025-06-10 031427](https://github.com/user-attachments/assets/1c95e57a-a191-4157-b1a6-a691ec92ad69)
+
+![Screenshot 2025-06-10 031615](https://github.com/user-attachments/assets/7072edc1-8a3b-4b83-b1e2-52fa685ac196)
+
+![Screenshot 2025-06-10 031656](https://github.com/user-attachments/assets/8e7e4b2a-bbb9-4f07-9d92-125559474c6b)
+
+![Screenshot 2025-06-10 031840](https://github.com/user-attachments/assets/b6570987-70ed-4ac5-abd0-40bb4b5ce845)
